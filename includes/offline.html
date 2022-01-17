@@ -1,0 +1,43 @@
+<html lang="pt-BR">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Cadilag</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background: #333;
+            }
+            .message{
+                color: white;
+                font-size: 50px;
+                text-align: center;
+                width: 100%;
+                position: fixed;
+                top: calc(50% - 25px);
+            }
+            .submessage{
+                color: white;
+                font-size: 25px;
+                text-align: center;
+                width: 100%;
+                position: fixed;
+                top: calc(50% + 25px);
+            }
+            .submessage a{
+                color: #0078e7;
+            }
+        </style>
+        <style media="(max-width: 510px)">
+            .message{
+                top: calc(50% - 100px);
+            }
+            .submessage{
+                top: calc(50% + 50px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="message">OFFLINE</div>
+        <div class="submessage">Algum problema na conexão ocorreu ao carregar a página</div>
+    </body>
+</html>

@@ -1,0 +1,1628 @@
+/** JSPLUMB ARTEFACTS **/
+
+.jsplumb-connector {
+    z-index: 49;
+}
+.jsplumb-endpoint {
+    z-index: 50;
+}
+.jsplumb-overlay {
+    z-index: 51;
+}
+/** OPEN SANS FONT **/
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url("OpenSans-Regular.ttf") format('truetype'), url("OpenSans.woff") format('woff');
+}
+@font-face {
+    font-family: fontCondensed;
+    src: url(../../../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+    font-family: principalFontThin;
+    src: url(../../../fonts/Raleway-ExtraLight.ttf);
+}
+@font-face {
+    font-family: principalFont;
+    src: url(../../../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: principalFontBold;
+    src: url(../../../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: secondaryFont;
+    src: url(../../../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: monospacedFont;
+    src: url(../../../fonts/VeraMono.ttf);
+}
+/** PAGE STRUCTURE **/
+
+body {
+    font-family: 'Arial';
+}
+#subtitle {
+    margin-bottom: 10px !important;
+}
+#title:hover {
+    color: #1A6;
+}
+#title p {
+    margin: 0px;
+}
+#title {
+    cursor: default;
+    position: fixed;
+    left: 170px;
+    bottom: 10px;
+    font-size: 20px;
+    font-family: fontCondensed;
+    text-align: right;
+    z-index: 1000;
+    line-height: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.appoptions > button {
+    background-color: rgba(73, 155, 234, 1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px 30px;
+    top: 2.5px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.appoptions > button:hover {
+    background-color: #59C0F9;
+    box-shadow: 0px 0px 5px #59C0F9;
+}
+.appoptions > button:disabled {
+    background-color: #aaa !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.appoptions > button:active {
+    background-color: rgb(196, 183, 255);
+}
+#AlgoritmoDiv .appoptions > button#saveCode {
+    background-image: url(../../../images/CadilagStructs/upload.svg);
+}
+#AlgoritmoDiv .appoptions > button#loadCode {
+    background-image: url(../../../images/CadilagStructs/importCode.svg);
+}
+#AlgoritmoDiv .appoptions > button#newCode {
+    background-image: url(../../../images/CadilagStructs/addCode.svg);
+}
+.appoptions .label {
+    right: 140px;
+    position: absolute;
+    width: 100px;
+    font-size: 15px;
+    padding-left: 3px;
+}
+.appoptions {
+    border: 1px rgba(0, 0, 255, 0.2) solid;
+    border-bottom: none;
+    border-top: none;
+    position: relative;
+    width: 424px;
+    height: 50px;
+    background: white;
+    padding: 5px;
+    z-index: 2;
+}
+#toggleOptions {
+    border: 1px rgba(0, 0, 255, 0.2) solid;
+    color: #444;
+    width: 436px;
+    height: 20px;
+    border-bottom-color: #cccccc;
+    border-top: none;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 95%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(95%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 95%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 95%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 95%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 95%, rgba(237, 237, 237, 1) 100%);
+    filter: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+.editTitleAlg {
+    background: rgba(57, 63, 76, 0.5);
+    border: 1px solid white;
+    width: 100%;
+}
+#EntradaProgramadaDiv .appbuttons {
+    margin-top: 10px;
+}
+#EntradaProgramadaDiv .appbuttons p {
+    margin: 5px;
+}
+#EntradaProgramadaDiv .appbuttons button:hover {
+    background-color: #59C0F9;
+    box-shadow: 0px 0px 5px #59C0F9;
+}
+#EntradaProgramadaDiv .appbuttons button:disabled {
+    opacity: 0.5;
+}
+#EntradaProgramadaDiv .appbuttons button {
+    color: white;
+    background-color: rgba(73, 155, 234, 1);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    height: 40px;
+    width: 18%;
+    margin-left: 5%;
+    font-weight: bold;
+    line-height: 40px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+}
+
+.tab{
+    border: 1px solid #499BEA;   
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.button-ep-wrapper{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.button-ep-wrapper .button{
+    background-color: #999999;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color:white;
+    cursor: pointer;
+}
+
+.button-ep-wrapper .button.selected{
+    background-color: #499BEA;    
+}
+
+#TableEp {
+    position: relative;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+#TableEp th {
+    background: #DDD;
+    text-align: center;
+    height: 30px;
+}
+#TableEp th.epfunction{
+    background: transparent;
+}
+#TableEp input:invalid {
+    border-image: url(../../../images/CadilagStructs/cross_white.svg) !important;
+    border-color: #ff3333 !important;
+    border-right-width: 30px !important;
+    background-color: #ff8e8e !important;
+    box-shadow: none;
+    color: white;
+    border-style: solid !important;
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+    border-left-width: 0px !important;
+    border-right-width: 30px !important;
+}
+#TableEp tr {
+    height: 35px;
+}
+#TableEp tr.inAction .epcount {
+    background: #BBF;
+    border-right: 3px solid #88F;
+    color: white;
+}
+#TableEp tr.inAction input.epvalue {
+    background: #A7A7FF;
+}
+#TableEp .epcount {
+    width: 22px;
+    background: #DDD;
+    border-right: 3px solid #AAA;
+    text-align: center;
+}
+#TableEp .epfunction {
+    width: 120px;
+}
+#TableEp input.epvalue {
+    width: calc(100% - 5px);
+    margin-left: 2px;
+    padding-left: 3px;
+    height: 32px;
+    background: #E7E7EC;
+    border: none;
+}
+#TableEp input.epvalue:hover {
+    background: #c0c0cd;
+}
+#TableEp input.epvalue:focus {
+    background: #d4d4dd;
+}
+#EntradaProgramadaDiv .appbuttons > button#eprun {
+    background-image: url(../../../images/CadilagStructs/play_white.svg);
+}
+#EntradaProgramadaDiv .appbuttons > button#epload {
+    background-image: url(../../../images/CadilagStructs/open_white.svg);
+}
+#EntradaProgramadaDiv .appbuttons > button#epsave {
+    background-image: url(../../../images/CadilagStructs/save_white.svg);
+}
+#EntradaProgramadaDiv .appbuttons > button#epclear {
+    background-image: url(../../../images/CadilagStructs/erase_white.svg);
+}
+#EntradaProgramadaDiv .appbuttons > button#ephistory {
+    background-image: url(../../../images/CadilagStructs/copyhistory.svg);
+    width: 90% !important;
+    margin-top: 5px;
+    height: 35px !important;
+    line-height: 35px !important;
+}
+.appbuttons {
+    font: "Trebuchet MS", "Helvetica", "sans-serif";
+    top: 1px;
+    font-size: 14px;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    border-right: none;
+    border-left: none;
+}
+#AlgoritmoDiv .appbuttons {
+    margin-bottom: 0px;
+    z-index: 1000;
+    margin-top: -1px;
+}
+#AlgoritmoDiv .appbuttons > button {
+    outline: none;
+    width: 33%;
+    float: left;
+    position: relative;
+    border: 1px rgba(0, 0, 255, 0.2) solid;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    color: #222;
+    height: 100%;
+}
+#AlgoritmoDiv .appbuttons > button:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+#AlgoritmoDiv .appbuttons > button.selected {
+    border-bottom: none;
+    background: white;
+}
+.main {
+    position: relative;
+    font-size: 80%;
+    width: calc(100% - 70px);
+    height: 100%;
+    margin-left: 10px;
+    overflow: auto;
+}
+#bd {
+    position: relative;
+}
+#canvas {
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+#time {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+#time:disabled{
+    opacity: 0.4;
+}
+#AlgoritmoDiv {
+    min-width: 440px;
+    position: fixed;
+    right: 50px;
+    top: 60px;
+    z-index: 999;
+}
+.algoritmo.hide {
+    max-height: 0px;
+}
+#AlgoritmoDiv.full > .algoritmo {
+    max-height: calc(100vh - 200px) !important;
+}
+.algoritmo {
+    min-width: 394px;
+    max-width: 394px;
+    font-family: "Trebuchet MS", "Helvetica", "sans-serif";
+    font-size: 12px;
+    position: absolute;
+    border: 1px rgba(0, 0, 255, 0.2) solid;
+    border-top: none;
+    max-height: calc(100vh - 260px);
+    padding-left: 40px;
+    padding-right: 10px;
+    overflow: scroll;
+    overflow-x: auto;
+    -webkit-transition: background 0.20s linear;
+    -moz-transition: background 0.20s linear;
+    -o-transition: background 0.20s linear;
+    -ms-transition: background 0.20s linear;
+    transition: max-height 0.5s ease-out, background 0.20s linear, margin-top 0.5s ease-out;
+    z-index: 0;
+}
+.debugimg {
+    background-image: url('../../../images/debugicon.png');
+    background-size: 35px 35px;
+    padding-left: 50px;
+    background-position: 10px 5px;
+    background-repeat: no-repeat;
+}
+.lockedimg {
+    background-image: url('../../../images/locked.png');
+    background-size: 50px 50px;
+    padding-left: 60px;
+    background-position: 40px 50%;
+    background-repeat: no-repeat;
+}
+.workingimg {
+    background-image: url('../../../images/inworking.jpg');
+    background-size: 50px 40px;
+    padding-left: 60px;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+}
+#ConfigDiv p {
+    margin: 10px;
+    font-size: 15px;
+}
+
+#StructDiv summary{ 
+    cursor: pointer;
+    background: #EEE;
+    border: 1px solid #DDD;
+    padding: 10px;
+}
+
+#StructDiv details{
+    border: 1px solid #999;
+    padding: 5px;
+    margin: -5px;
+}
+
+#EntradaProgramadaDiv > .title,
+#StructDiv > .title,
+#ConfigDiv > .title,
+#RevisaoDiv > .title,
+#HistoryDiv > .title {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    font-family: principalFontThin;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 2px solid #444444;
+}
+#ConfigDiv .subtitle {
+    width: 100px;
+    margin-left: 10px;
+    position: relative;
+    height: 30px;
+    font-family: principalFontThin;
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 2px solid #cccccc;
+}
+#EntradaProgramadaDiv,
+#StructDiv,
+#RevisaoDiv,
+#HistoryDiv {
+    position: fixed;
+    right: 40px;
+    top: 60px;
+    width: 410px;
+    margin-right: 10px;
+    border: 1px rgba(0, 0, 255, 0.2) solid;
+    border-top: none;
+    padding-bottom: 10px;
+    -webkit-transition: background 0.20s linear;
+    -moz-transition: background 0.20s linear;
+    -o-transition: background 0.20s linear;
+    -ms-transition: background 0.20s linear;
+    transition: background 0.20s linear;
+    z-index: 1000;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    max-height: calc(100vh - 140px);
+}
+
+#ConfigDiv{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 70px;
+    left: 20px;
+    z-index: 1000;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    background: white;
+    position: fixed;
+    width: 410px;
+    padding: 10px;
+    padding-top: 0px;
+
+}
+#ConfigDiv .content{
+    overflow-y: auto;
+    max-height: calc(100vh - 220px);
+}
+#HistoryDiv form {
+    margin: 10px;
+}
+#StructDiv {
+    font-size: 14px;
+    font-family: "Trebuchet MS", "Helvetica", "sans-serif";
+    overflow-x: hidden;
+}
+
+#ClockAreaLabel{
+    bottom: 72px;
+    right: 72px;
+    position: fixed;
+    color: #666;
+    font-family: principalFont;
+}
+
+#ClockArea {
+    font-family: fontCondensed;
+    padding: 10px;
+    background: white;
+    bottom: 10px;
+    right: 65px;
+    height: 35px;
+    position: fixed;
+    margin-top: -20px;
+    width: 170px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    border: 2px solid #e7e7e7;
+}
+#ClockArea > input[type="text"] {
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border:none;
+}
+
+#ClockArea > input[type="text"]:focus{
+    border: 1px solid blue;
+    background: #EEE;
+}
+
+#ClockArea > input[type='range'] {
+    padding: 0px 0px 0px 0px; 
+    height: 20px;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+}
+
+
+.inputcode {
+    max-width: 400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-indent: 5px;
+    cursor: text;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #4183F4;
+}
+.spanInputCode::after {
+    background: white;
+    content: attr(counter);
+    padding: 2px;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    color: #0048e7;
+    position: absolute;
+    left: -40px;
+    text-align: center;
+}
+#huboptions {
+    width: 200px;
+    right: 0px;
+    top: 45px;
+    color: black;
+    font-family: principalFontThin;
+    position: absolute;
+    margin-right: 7px;
+    font-size: 18px;
+    z-index: 2000;
+    border-bottom-width: 10px;
+    border-style: solid;
+    border-color: rgba(200, 200, 200, 0.5);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+#huboptions .option {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 40px;
+    margin: 0px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+    z-index: 1006;
+    line-height: 40px;
+    text-decoration: none;
+    color: #222;
+    position: relative;
+}
+#huboptions .option:visited {
+    text-decoration: none;
+    color: #222;
+}
+#huboptions .option:hover {
+    text-decoration: underline !important;
+}
+#huboptions .option:hover {
+    background: rgb(205, 205, 255);
+}
+.huboptions-container[open=""] {
+    border: 5px solid #4096ee;
+}
+.huboptions-container {
+    border: none;
+}
+.huboptions-container[open=""] .huboptions-container-title {
+    background: #4096ee;
+    color: white;
+    box-shadow: none;
+}
+.huboptions-container-title {
+    background: white;
+    height: 30px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    cursor: default;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.6);
+}
+.huboptions-container-title small {
+    font-size: 10px;
+}
+#openedEpTitle {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+#EpCount {
+    margin: 0px;
+    text-align: center;
+    font-size: 16px;
+    cursor: default;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
+    width: 15px;
+    height: 30px;
+    float: left;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    font-family: principalFontThin;
+}
+.MenuTitle {
+    text-align: center;
+    line-height: 100%;
+    font-size: 18px;
+    white-space: nowrap;
+}
+#ConfigDiv .label {
+    line-height: 26px;
+    margin-left: 60px;
+}
+#ConfigDiv .label2 {
+    text-align: center;
+}
+.explicacao > hover {
+    color: #7AB02C;
+}
+.Separator {
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, rgba(220, 220, 220, 0) 0px, rgba(0, 0, 0, 0.5) 50%, rgba(220, 220, 220, 0) 100%);
+}
+.algoritmo > .Separator,
+#StructDiv > .Separator {
+    height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.EpitemValue:disabled {
+    cursor: default;
+}
+.EpType[disabled='disabled'] > .separatorep {
+    opacity: 0;
+}
+.EpType[disabled='disabled'] .epadd,
+.EpType[disabled='disabled'] .eprem {
+    cursor: default;
+}
+.EpType {
+    width: 106px;
+    right: 0px;
+    margin-top: -16px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: absolute;
+}
+.separatorep {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    width: 15px;
+    height: 30px;
+    background: white;
+    float: left;
+    border-width: 0px;
+    border-left-width: 4px;
+    border-style: solid;
+    border-color: #DDD;
+    position: absolute;
+    z-index: 1011;
+}
+.epadd > p {
+    line-height: 30px;
+    margin: 0px;
+    margin-left: 25px;
+}
+.eprem > p {
+    line-height: 30px;
+    margin: 0px;
+    margin-right: -121px;
+}
+.epadd {
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.6);
+    z-index: 1010;
+    position: absolute;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+    background: #40cd28;
+    color: white;
+    overflow: hidden;
+    width: 106px;
+    font-weight: bold;
+    height: 30px;
+    border-right-width: 0px;
+}
+
+.epadd:hover{
+    background: #77e165;
+}
+.eprem {
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.6);
+    z-index: 1009;
+    position: absolute;
+    text-align: right;
+    width: 106px;
+    cursor: pointer;
+    background: #ff3019;
+    color: white;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    float: right;
+    font-weight: bold;
+    border-left-width: 0px;
+}
+.eprem:hover{
+    background: #F66;
+}
+#EntradaProgramadaUl > li {
+    margin-left: -30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+.EpitemValue {
+    font-weight: normal;
+    margin-bottom: 1px;
+    height: 30px;
+    border: none;
+    width: 210px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    float: left;
+    padding-left: 10px;
+}
+#primaryColor,
+#secondaryColor {
+    text-align: center;
+}
+.jscolor {
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 100px;
+    border: none;
+}
+.resetColor:hover {
+    background-color: #eee;
+}
+.resetColor:active {
+    background-color: #ddd;
+}
+.resetColor {
+    height: 50px;
+    width: 30px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    position: relative;
+    background-image: url(../../../images/CadilagStructs/reload.svg);
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #ddd;
+    float: right;
+    display: inline-block;
+}
+#canv {
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+}
+@keyframes animationMessage {
+    20% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    80% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+}
+.opentip button {
+    border-radius: 5px;
+    padding: 2.5px;
+    color: black;
+}
+.opentip p {
+    margin: 0px;
+}
+#codeSelect+.select2 {
+    width: 240px !important;
+}
+.select2-results strong {
+    background: #f2f2f2;
+}
+#AlgoritmoDiv .select2 {
+    margin-top: 20px;
+}
+.message {
+    position: fixed;
+    opacity: 0;
+    left: 50px;
+    background-color: #f66358;
+    padding: 10px;
+    transform: rotateX(90deg);
+    padding-left: 40px;
+    background-image: url(../../../images/CadilagStructs/warning.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 5px center;
+    color: white;
+    z-index: 200;
+    animation: animationMessage 2s infinite alternate;
+}
+.head-line {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    margin-left: -30px;
+    font-size: 15px;
+    color: #444;
+    text-align: center;
+    transition: all 0.20s ease-in;
+    cursor: default;
+}
+.head-line:hover {
+    color: #4183C4;
+}
+.head-line:hover + .subhead-item {
+    opacity: 1;
+    height: 30px;
+    margin-top: 10px;
+}
+.subhead-item {
+    margin-left: -30px;
+    font-weight: bold;
+    color: #444444;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0, 1, .58, 1);
+    font-size: 15px;
+    cursor: default;
+    opacity: 0;
+    height: 0px;
+}
+.subhead-item:hover {
+    color: #4183C4;
+    opacity: 1;
+    height: 30px;
+    margin-top: 10px;
+}
+.handlerTab:hover {
+    background: url("../../../images/CadilagStructs/downblue.svg") no-repeat 4px 50%;
+    background-size: 12px;
+}
+.handlerTab {
+    background: url("../../../images/CadilagStructs/downorange.svg") no-repeat 4px 50%;
+    background-size: 12px;
+    padding-left: 15px;
+}
+.handlerTab.hide:hover {
+    background: url("../../../images/CadilagStructs/rightblue.svg") no-repeat 4px 50%;
+    background-size: 12px;
+}
+.handlerTab.hide {
+    background: url("../../../images/CadilagStructs/rightorange.svg") no-repeat 4px 50%;
+    background-size: 12px;
+}
+.TabCode > .handlerTab {
+    padding-left: 0px;
+    margin-left: 10px;
+}
+.TabCode {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 14px;
+    border-left: 2px solid chocolate;
+}
+.TabCode > .TabCode {
+    margin-left: 19px;
+}
+.TabCode > .TabCode:hover {
+    margin-left: 18px;
+}
+.TabCode:hover > .delimiterUp > c,
+.TabCode:hover > .delimiterDown > c {
+    color: #4183C4;
+    font-weight: 900;
+}
+.TabCode:hover {
+    border-left: solid #4183C4;
+    margin-left: 13px;
+}
+.EpSubDiv > a {
+    cursor: pointer;
+}
+.EpSubDiv {
+    text-align: right;
+    font-weight: bold;
+}
+/* elements */
+
+li {
+    list-style: none;
+}
+tipsytitle{
+    font-size: 15px;
+    font-weight: bold;
+}
+tipsylabel{
+    font-size: 12px;
+}
+tipsyb {
+    font-size: 15px;
+}
+tipsym {
+    font-size: 15px;
+}
+.tipsy-head {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+    font-family: monospace;
+}
+.tipsy-table {
+    font-family: monospace;
+}
+.tipsy-table th {
+    color: black !important;
+    background: white;
+}
+.tipsy-table th,
+.tipsy-table td {
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 1px solid white;
+}
+
+#sidebar.showDetail {
+    width: 250px;
+}
+#sidebar.showDetail > ul > li {
+    width: 250px;
+}
+
+#sidebar {
+    z-index: 1999;
+    right: 0px;
+    width: 50px;
+    height: calc(100% - 50px);
+    top: 50px;
+    background: #fafaff;
+    position: fixed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding-right: 2px;
+    transition: width 0.2s ease-out;
+}
+#sidebar > ul {
+    padding: 0px;
+    position: relative;
+    margin: 0px;
+}
+#sidebar > ul > li:first-child {
+    margin-top: 10px;
+}
+#sidebar > ul > li:hover {
+    border-left-color: #555555;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+#sidebar > ul > li:hover > span {
+    right: 60px;
+    opacity: 1;
+}
+#sidebar > ul > li > span {
+    overflow: hidden;
+    width: 120px;
+    font-family: secondaryFont;
+    height: 50px;
+    right: -120px;
+    transition: right 0.2s ease-out, opacity 0.2s ease-out;
+    position: absolute;
+    text-align: right;
+    opacity: 0;
+}
+#hidesidebar:hover {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#navsidebar,
+#hidesidebar {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    width: 260px;
+    height: 50px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #fafaff;
+    border: none;
+    background-image: url(../../../images/CadilagStructs/hide.svg);
+    margin-left: -10px;
+    z-index: 100;
+    display: none;
+    position: relative;
+}
+#navsidebar > p,
+#hidesidebar > p {
+    margin-left: 60px;
+    line-height: 50px;
+}
+#navsidebar {
+    display: block;
+    z-index: 99;
+}
+#sidebar > ul > li {
+    width: 50px;
+    height: 60px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    margin: 0px;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: width 0.5s ease-out;
+    overflow: visible;
+}
+#sidebar > ul > li > p {
+    margin: 0px;
+    margin-left: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+#sidebar > ul > li.appselected {
+    border-left: 5px solid #635FBA;
+    background-position: 2px center;
+    background-color: white;
+}
+#navsidebar {
+    background-image: url(../../../images/CadilagStructs/menu.svg);
+}
+#sourcecode-btn {
+    background-image: url(../../../images/CadilagStructs/coding.svg);
+}
+#config-btn {
+    background-image: url(../../../images/CadilagStructs/settings.svg);
+}
+#history-btn {
+    background-image: url(../../../images/CadilagStructs/history.svg);
+}
+#structview-btn {
+    background-image: url(../../../images/CadilagStructs/info.svg);
+}
+#eprogramada-btn {
+    background-image: url(../../../images/CadilagStructs/multiple-shots.svg);
+}
+#revisao-btn{
+    background-image: url(../../../images/CadilagStructs/revisao.svg);
+}
+
+#feedback,#help,#config {
+    bottom: 10px;
+    left: 62px;
+    position: fixed;
+    fill: rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    border: none;
+}
+#help{
+    color: rgba(0, 0, 0, 0.6);
+    left: 115px;
+    font-size: 35px;
+}
+#config{
+    left: 15px;
+    transition: fill 0.2s ease-out;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 35px;
+}
+
+#config.selected{
+    color: #0048e7;
+}
+
+#help:hover,#config:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.liHelp a{
+    color: blue;
+    font-family: principalFont;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold;
+}
+.liHelp{
+    list-style: decimal;
+}
+.liHelp a:hover{
+    text-decoration: underline;
+}
+
+#feedback:hover{
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+
+.mobile.toM {
+    display: none;
+}
+#history {
+    position: relative;
+    left: 0px;
+    padding: 0px;
+    width: 370px;
+    margin: 0px;
+    margin-left: 10px;
+}
+#history > li:nth-child(odd) > ul,
+#history > li:nth-child(odd) > span {
+    background-color: #eee;
+}
+#history > li {
+    height: 30px;
+    line-height: 30px;
+    width: 380px;
+}
+#history > li:last-child > .item-history-function,
+#history > li:last-child > .item-list-history {
+    border-bottom: 1px solid #4183F4;
+}
+#history > li > .item-list-history > li {
+    float: left;
+    height: 20px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+#history > li > .item-list-history > li:not(:last-child) {
+    border-right: 1px solid #555555;
+}
+#history > li > .item-list-history {
+    width: 328px;
+    text-align: center;
+    float: left;
+}
+#history > li > ul,
+#history > li > span {
+    border-left: 1px solid #4183F4;
+    border-right: 1px solid #4183F4;
+    padding: 0px;
+    margin: 0px;
+    height: 30px;
+}
+#history > li > .item-history-function > li {
+    height: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#history > li > .item-history-function {
+    margin-left: 10px;
+    width: 33px;
+    right: -5px;
+    position: absolute;
+    border-left: 1px solid #4183F4;
+    float: right;
+}
+#history-head {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    height: 30px;
+}
+#history-head>li {
+    float: left;
+}
+.insert_function {
+    background-image: url(../../../images/CadilagStructs/add.svg);
+    background-position: center center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+.remove_function {
+    background-image: url(../../../images/CadilagStructs/minus.svg);
+    background-position: center center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+#title-history-funtion {
+    background-color: #4183F4;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 35px;
+    height: 20px;
+    right: 0px;
+    position: relative;
+    margin-left: 10px;
+    background-image: url(../../../images/CadilagStructs/function.svg);
+    background-position: center center;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+#title-history {
+    height: 20px;
+    width: 330px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    background: #4183F4;
+    color: white;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+#title-history > li {
+    float: left;
+    height: 20px;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+}
+#title-history > li:not(:first-child) {
+    border-left: 1px solid white;
+}
+.compareItems {
+    position: absolute;
+    opacity: 0.8;
+    height: 120px;
+    width: 70px;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px solid red;
+}
+#dialogOpenCode {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.4);
+    overflow: visible;
+}
+#selectorCode {
+    width: 640px;
+    height: 360px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    left: calc((100% - 540px)/2);
+    top: calc((100% - 360px)/2);
+    position: relative;
+    border-radius: 5px;
+}
+#selectorCode > .buttons {
+    margin-left: 30px;
+    right: 25px;
+    width: 170px;
+    bottom: 15px;
+    position: absolute;
+}
+#selectorCode > .buttons > button {
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    padding: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#selectorCode > .content {
+    width: 400px;
+    height: 300px;
+    left: 25px;
+    top: 25px;
+    border: 2px solid #4183F4;
+    border-radius: 10px;
+    position: absolute;
+    padding: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+#selectorCode > .content > li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#selectorCode > .content > li:not(.empty) {
+    height: 50px;
+    list-style: none;
+    width: 340px;
+    margin: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    cursor: pointer;
+    padding-left: 50px;
+    background-image: url(../../../images/CadilagStructs/fileopen.svg);
+    background-repeat: no-repeat;
+    background-position: 0px center;
+}
+#selectorCode > .content > li:not(.empty):hover {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+#selectorCode > .content > li:hover > .value {
+    text-decoration: underline;
+}
+#selectorCode > .content > li.empty {
+    line-height: 50px;
+    text-align: center;
+    cursor: default !important;
+    background-image: url(../../../images/CadilagStructs/empty-box.svg);
+    background-size: 100px 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    line-height: 220px;
+    color: #888;
+    font-family: "monospaced";
+    font-weight: bold;
+}
+#selectorCode > .content > li > .value {
+    color: black;
+    height: 30px;
+    position: relative;
+    line-height: 30px;
+    padding-left: 10px;
+}
+#selectorCode > .content > li > .foot {
+    width: 100%;
+    height: 20px;
+    background: #7abcff;
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    background: linear-gradient(to bottom, #7abcff 0%, #60abf8 44%, #4096ee 100%);
+    filter: DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee', GradientType=0);
+    position: relative;
+    bottom: 0px;
+    color: white;
+    padding-left: 5px;
+    font-size: 13px;
+    line-height: 20px;
+}
+#selectorCode > .sidecontent {
+    width: 170px;
+    margin: 2px;
+    right: 25px;
+    top: 40px;
+    position: absolute;
+    background: #efefef;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#selectorCode > .title {
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    position: relative;
+}
+#selectorCode > .sidecontent button {
+    background: #cccccc;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: white;
+}
+#selectorCode > .sidecontent button.selected {
+    background: #4183C4;
+}
+#selectorCode > .sidecontent button:not(.selected):hover {
+    background: #aaaaaa;
+}
+.algoritmo {
+    background-color: white;
+}
+[EpCurrent=selected] {
+    background: #3153F4;
+}
+
+.info-desc {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+#parameters {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.info-head-line:before{
+    content: "● ";
+}
+
+.info-head-line{
+    list-style-type: circle;
+    margin: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#RevisaoDiv{
+    max-height: calc(100vh - 140px);
+}
+
+#RevisaoDiv .content{
+    padding: 10px;
+}
+
+#RevisaoDiv .content .status{
+    margin: 0px;
+    color: #555555;
+}
+
+#empty-revisao-content .status{
+    color: #aaa !important;
+}
+
+#RevisaoDiv .content #lastsubtitle{
+    font-weight: bold;
+}
+
+#RevisaoDiv table{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #DDD;
+}
+
+#RevisaoDiv table th:first-child{
+    width: 50px;
+}
+
+#RevisaoDiv th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background: #0048e7;
+    color: white;
+}
+#RevisaoDiv tr td:first-child{
+    text-align: center;
+    border-right: 1px solid #DDD;
+    font-size: 18px;
+}
+
+#RevisaoDiv td{
+    padding: 5px;
+    font-size: 13px;
+}
+
+#RevisaoDiv tbody tr:nth-child(odd){
+    background: #EEE;
+}
+
+#RevisaoDiv tbody tr:nth-child(even){
+    background: #FFF;
+}
+#RevisaoDiv tbody tr:hover{
+    border: 2px solid #3153F4;
+} 
+.arrowtip{
+    background: white;
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    bottom: -10px;
+    transform: rotate(45deg);
+    left: 10px;
+    position: absolute;
+}
+.tooltipHelp{
+    font-family: principalFont;
+}
+.highlightHelp{
+    background: rgba(255,255,255,0.2);
+    border: 1px solid white;
+}
+
+red{
+    color:red;
+    font-weight: bold;
+}
+
+green{
+    color:green;
+    font-weight: bold;
+}
+
+blue{
+    color:blue;
+    font-weight: bold;
+}
+.header-div{
+    background: white;
+}
+.header-div .Separator:first-child{
+    margin-bottom: 15px;
+}
+.header-div .Separator:last-child{
+    margin-top: 15px;
+}
+.colorInput{
+    display: inline-block;
+    width: 135px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.opentip-container.style-standard .ot-content{
+    background: rgba(64,64,64,1);
+    color: white;
+}
+
+.opentip-container.style-standard button{
+    box-shadow: rgb(255, 255, 255) 0px 1px 0px 0px inset;
+    background: linear-gradient(rgb(255, 255, 255) 5%, rgb(246, 246, 246) 100%) rgb(255, 255, 255);
+    border: 1px solid rgb(220, 220, 220);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+}
+
+#chanceNegativeInput{
+    display: inline-block;
+    width: 300px;
+}
+
+#chanceNegativeLabel{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.toggleButtonOrganizar{
+    left: 10px;
+    top: 70px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: 45px 45px;
+    background-color: white;
+}
+
+.toggleButtonOrganizar:disabled{
+    opacity: 0.5;
+    background-color: #EEE;    
+}
+
+.toggleButtonOrganizar.expand{
+    background-image: url(../../../images/expand_tree.svg);
+}
+
+.toggleButtonOrganizar.minimize{
+    background-image: url(../../../images/minimize_tree.svg);
+    border-width: 2px;
+    border-style: inset;
+    border-color: buttonface;
+    border-image: initial;
+}

@@ -1,0 +1,21 @@
+/* 
+    Created on : 23/02/2016, 13:40:33
+    Author     : joaog
+*/
+.topbar .title{
+    display: none;
+}
+
+.content{
+    left: 0px;
+    width: calc(100% - 40px);
+}
+
+.content > .linkedit{
+    margin-left: 0px;
+    width: 100%;
+}
+
+.content form input{
+    width: 100%;
+}

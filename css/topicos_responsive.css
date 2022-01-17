@@ -1,0 +1,51 @@
+/* 
+    Created on : 13/04/2018, 12:30:47
+    Author     : Acer
+*/
+
+.area{
+    left: 0px;
+    width: 100%;
+    position: absolute;
+}
+
+.topicos .topico > .time {
+    display: none;
+}
+
+.topicos .topico > .title {
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+    display: none;
+}

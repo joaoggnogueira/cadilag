@@ -1,0 +1,309 @@
+/* 
+    Created on : 12/06/2018, 18:23:21
+    Author     : Acer
+*/
+
+
+.notify-btn{
+    top: 0px;
+    right: 180px;
+    float: right;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: white;
+    font-size: 20px;
+    font-family: fontCondensed; 
+    color: #444;
+    line-height: 53px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    text-align: left !important; 
+}
+
+.anotify{
+    margin: 0px !important;
+    padding: 0px !important;
+    display: inline-block;
+    text-align: left !important; 
+}
+
+.anotify:focus{
+    border: 1px solid #0033ff;
+    color: #0033ff;
+    text-decoration: underline;
+}
+
+.notify-btn:hover{
+    color: #0033ff;
+}
+
+.notify-btn:active{
+    color: #235aff;
+    transform: scale(0.9);
+}
+
+.notify-btn::before{
+    content: "\f0f3 ";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 25px;
+    color: #444;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.notify-btn:hover::before{
+    color: #666;
+}
+
+.notify-btn:active::before{
+    color: #222;
+}
+
+.notify-btn[count='0']::after{
+    background: #777;
+    animation: none;
+}
+
+.notify-btn[count='?']::after{
+    background: #333;
+    animation: pulseLoading 2s infinite;
+    font-family: FontAwesome;
+    content:"\f110";
+}
+
+.notify-btn::after{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    content: attr(count);
+    margin-left: 5px;
+    line-height: 20px;
+    display: inline-block;
+    right: 10px;
+    top: 5px;
+    z-index: 2;
+    position: absolute;
+    animation: pulse 2s infinite;
+    border: 1px solid white;
+}
+
+@-webkit-keyframes pulseLoading {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 red;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px transparent;
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-box-shadow: 0 0 0 0 transparent;
+    }
+}
+@keyframes pulseLoading {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0.6);
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0.6);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+        box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+    }
+    100% {
+        transform: rotate(360deg);
+        -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 red;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px transparent;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 transparent;
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 1);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 1);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+        box-shadow: 0 0 0 10px rgba(255,0,0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+        box-shadow: 0 0 0 0 rgba(255,0,0, 0);
+    }
+}
+
+.notify-tab{
+    top:50px;
+    width: 300px;
+    position: absolute;
+    right: 180px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border: 1px solid #999;
+    z-index: 1005;
+    padding-bottom: 10px;
+}
+
+.notify-tab .title{
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #222;
+    position: relative;
+    background: white;
+    font-weight: bold;
+}
+
+.notify-tab .subtitle{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #555;
+    background: #aaa;
+    border-bottom: 1px solid #AAA;
+    border-top: 1px solid #AAA;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.notify-tab .arrow{
+    width: 20px;
+    height: 20px;
+    background: white;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 17px;
+    transform: rotate(45deg);
+    z-index: -1;
+    border: 1px solid #AAA;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.notify-tab ul{
+    width: calc(100% - 20px);
+    margin: 0px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.notify-tab ul a{
+    margin: 5px;
+    color: #222;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.notify-tab ul li{
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px solid #AAA;
+}
+
+.notify-tab ul li i{
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 10px;
+    position: absolute;
+}
+
+.notify-tab ul li .content-notify{
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.notify-tab ul li .data-notify{
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #888;
+    padding-left: 50px;
+}
+
+.notify-tab ul li:hover{
+    text-decoration: underline !important;
+    color: #0033ff;
+    cursor: pointer;
+}
+
+.notify-tab ul li:hover .content{
+    color: #0033ff;
+}
+.notify-tab ul li:hover .data{
+    color: #0033ff;
+}
+.notify-tab ul li:hover i{
+    color: #0033ff;
+}
+
+.notify-dialog a{
+    display: inline-block;
+    padding: 0px;
+    background: #235aff;
+    color: white;
+    font-size: 20px;
+    font-family: principalFont;
+    border-radius: 10px;
+    margin: 10px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 60px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.notify-dialog a .fa{
+    background: #7a9bff;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    line-height: 50px;
+    margin-left: -60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.notify-dialog-subtitle{
+    font-size: 15px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}

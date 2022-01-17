@@ -1,0 +1,401 @@
+.subsidebar{
+    top: 0px;
+    min-height: 100%;
+    font-family: principalFont;
+    background: #4267b2;
+    width: 270px;
+    left: -270px;
+    position: fixed;
+    max-height: 100%;
+    color:white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1002;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+}
+
+.subsidebar a{
+    text-decoration: none;
+}
+.subsidebar > a:hover{
+    background: #ddd;
+    cursor: pointer;
+}
+.subsidebar > a{
+    background: #eee;
+    line-height: 135px;
+    width: 280px;
+    height: 135px;
+    margin: 0px;
+    overflow: hidden;
+    z-index: 700;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.subsidebar > a > img{
+    margin-top: 30px;
+}
+
+.subsidebar button{
+    margin-left: 10px;
+    width: 230px;
+    border-radius: 0px;
+    position: relative;
+}
+.subsidebar input[type="button"]{
+}
+.subsidebar input[type="search"]{
+    height: 30px;
+    margin-left: 30px;
+    width: 150px;
+    border: 1px solid #3C3C3C;
+    margin-left: 20px;
+    position: relative;
+    color: black;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-image: url(../../../images/CadilagStructs/search.png);
+    background-repeat: no-repeat;
+    background-position: 10px 5px;
+    background-size: 20px 20px;
+    
+}
+.subsidebar > .title{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+}
+
+.subsidebar > .title > p{
+    line-height: 30px;
+    height: 30px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.estruturas{
+    margin-top: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.item{
+    position: relative;
+}
+
+.container2 > .item-bg2 > .item,.container2 > .item-bg1 > .item{
+    background-image: url('../../../images/CadilagStructs/nav5.png');
+}
+.container2 > .item-bg2 > .item:hover,.container2 > .item-bg1 > .item:hover{
+    background-image: url('../../../images/CadilagStructs/plusblue.png');    
+}
+.container2 > .item-bg2 > .item:hover > p,.container2 > .item-bg1 > .item:hover > p{
+    color: #0078e7;
+}
+.container2 > .item-bg2 > .item[open=open]:hover,.container2 > .item-bg1 > .item[open=open]:hover{
+    background-image: url('../../../images/CadilagStructs/minusblue.png');    
+}
+.item{
+    font-size: 16px;
+    text-align: center;
+    transition: color 0.2s linear;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    background-image: url('../../../images/CadilagStructs/nav4.png');
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 25px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+
+.item:active{
+    font-weight: bold; 
+}
+
+
+.container1 .item:hover p{
+    color: white;
+    font-weight: bold;
+}
+
+.container1 > .item:hover{
+    background-image: url('../../../images/plus.png');
+}
+
+.item:hover{
+    color: #66f;
+    background-size: 25px 25px; 
+    background-position: 20px;
+    background-image: url('../../../images/CadilagStructs/plusblue.png');
+}
+
+subsidebar a{
+    text-decoration: none;  
+}
+
+subsidebar a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+subsidebar a:hover{
+    text-decoration: underline;
+}
+.container1 > .item{
+    text-align: left;
+}
+.container1 > .item > p{
+    margin-left: 60px;
+}
+.container2 .item[open=open]{
+    background-size: 25px 30px;
+    background-image: url('../../../images/CadilagStructs/nav6.png');   
+}
+.container1 > .item[open=open]{
+    background-size: 25px 30px;
+    background-image: url('../../../images/CadilagStructs/nav3.png');  
+    border-bottom: 1px solid #707070;
+}
+.container2 p{
+    color: #404040;
+}
+.container2{
+    background-color: #fcfcfc;
+}
+.container3{
+    background-color: rgba(0,0,0,0.1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.container2 > .item-bg > .item[open=open]{
+    background-position: 30px;
+}
+
+.container2 > .item-bg > .item:hover{
+    background-position: 27px;    
+}
+
+.item[open=open]:hover{
+    background-size: 30px 30px; 
+    background-image: url('../../../images/CadilagStructs/minusblue.png');
+    background-position: 22px;
+}
+
+.container1 > .item[open="open"]:hover{
+    background-image: url('../../../images/minus.png') !important; 
+}
+
+.item p{
+    line-height: 30px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.subitens{
+    position: relative;
+    max-height: 0px;
+    transition: max-height 0.4s ease-out;
+    overflow: hidden;
+}
+
+.subitens[open=open]{
+    border-top: solid 1px #a0a0a0;
+    max-height: 500px; 
+}
+
+.container1{
+    position: relative;
+}
+
+.subitens .container2,.subitens .container3{
+
+    color:white;
+    position: relative;
+}
+
+.container1 .item{
+    width: 100%;
+}
+
+.subitens .container2 .item{
+    width: 230px;
+    margin-left: 20px;
+    background-position: 27px;
+}
+
+.subitens .container3 .item{
+    width: 210px;
+    margin-left: 40px;    
+}
+.item-bg{
+    background-repeat: no-repeat;
+    background-size: 25px 30px;
+
+    background-position: 25px; 
+}
+
+.item-bg1{
+    background-image: url('../../../images/CadilagStructs/nav1.png');   
+}
+
+.item-bg2{
+    background-image: url('../../../images/CadilagStructs/nav2.png');   
+}
+
+.item-bg3{
+    background-image: url('../../../images/CadilagStructs/nav.png'); 
+    background-size: 25px 100%;
+    background-position: 24px;
+}
+
+.container3 .item-bg:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.container3 .item-bg{
+    background-position: 50px;
+}
+
+
+.itemfinal{
+    background-image: none;
+
+}
+
+.subitens .container3 .itemfinal:hover{
+    background-image: url('../../../images/CadilagStructs/nav5.png');    
+    background-size: 30px 30px; 
+    background-position: 165px;
+}
+bold{
+    font-weight: bold;
+}
+
+
+.estrutura a{
+    color: white;
+}
+
+.selectestrutura{
+    margin-top: 20px;
+    border-top: 1px solid #3F3F3F; 
+    position: relative;
+}
+
+.selectestrutura bold{
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#emptyestrutura{
+    text-align: center;
+
+}
+
+#searchestrutura{
+    font-family: principalFont;
+}
+
+.selectestrutura .optionestrutura > .subtag{
+    font-size: 15px;
+
+}
+.selectestrutura .optionestrutura > .subtag > p{
+    line-height: 20px;
+    margin: 0px;
+
+}
+
+.selectestrutura .optionestrutura[tag=tag]{
+    height: 70px;
+}
+.selectestrutura .optionestrutura p{
+    line-height: 40px;
+    color: white;
+    margin: 0px;
+}
+.selectestrutura .optionestrutura .subtag p{
+    line-height: 30px;
+}
+.selectestrutura .optionestrutura{
+    height: 40px;
+    width: 100%;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.26) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.26) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.26) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
+    border-bottom: 1px solid #3F3F3F;
+    transition: background 0.25s linear;
+    text-align: center;
+    cursor: pointer;
+    background-position: 100% 50%; 
+    background-size: 100% 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.selectestrutura .optionestrutura:hover{
+    background: #333; /* For browsers that do not support gradients */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.26) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.26) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.26) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#42ffffff',GradientType=0 );
+
+}
+
+.selectestrutura .optionestrutura:active{
+    background: #444; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2F2F2F,#282828,#2F2F2F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2F2F2F,#282828,#2F2F2F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2F2F2F,#282828,#2F2F2F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2F2F2F,#282828,#2F2F2F); /* Standard syntax */
+}
+
+.selectestrutura .optionestrutura > p{
+    line-height: 40px;
+    margin: 0px;
+}
+
+#lastViews{
+    margin: 10px;
+}
+
+#lastViews summary{
+    cursor: pointer;
+    padding: 10px;
+    background-image: url("../../../images/CadilagStructs/historyWhite.svg");
+    background-position: right 5px center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid #999999;
+    display: block;
+}
+
+#lastViews ul li{
+    list-style: decimal;
+    margin-bottom: 10px;
+}
+
+#lastViews ul li a{
+    color: white;
+}
+
+#lastViews ul li a:hover{
+    text-decoration: underline;
+}
+
+#lastViews ul li small{
+    font-size: 10px;
+}

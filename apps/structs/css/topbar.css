@@ -1,0 +1,412 @@
+/**
+*  TOPBAR
+*/
+
+.button-hide i{
+    color: black !important;
+    background: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#topbar {
+    width: 100%;
+    left: 0px;
+    height:50px;
+    margin: 0px;
+    font-size: 14px;
+    position: fixed;
+    z-index: 2001;
+    list-style: none;
+    font-family: principalFont; 
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+#topbar input,#subtopbar input,#subtopbar select{
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+#add:disabled,#remove:disabled,#search:disabled,#others:disabled{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+/*Botões do Topbar*/
+
+#add,#remove,#search,#others,#stop,#resume,#step,#registroativacao{
+    display: block;
+    border: none;
+    margin-top: 3px;
+    min-width: 35px;
+    min-height: 33px;
+    transition: filter 0.2s linear,box-shadow 0.2s linear,background-color 0.2s linear;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25px 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #f7f7f7;
+}
+
+#add.selected:disabled{
+    animation: blinkAdd 1s infinite alternate;
+    background-image: url(../../../images/addbuttonwhite.png);  
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+}
+#remove.selected:disabled{
+    animation: blinkRem 1s infinite alternate;
+    background-image: url(../../../images/rembuttonwhite.png);  
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+}
+#search.selected:disabled{
+    animation: blinkSearch 1s infinite alternate;
+    background-image: url(../../../images/busbuttonwhite.png);  
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+}
+
+#others.selected{
+    animation: blinkOthers 1s infinite alternate;
+    background-image: url(../../../images/more-white.svg);  
+    -webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
+}
+
+.pure-button-more{
+}
+
+#registroativacao{
+    background-image: url(../../../images/CadilagStructs/bug.svg);
+}
+
+#others{
+    background-image: url(../../../images/more.svg);
+}
+
+#step{
+    background-position: 10px center;
+    background-image: url(../../../images/CadilagStructs/next-step.svg);
+    padding-left: 40px;
+    font-family: principalFontBold;
+    color: #599cf3; 
+}
+
+#resume{
+    background-position: 10px center;
+    background-image: url(../../../images/CadilagStructs/play_blue.svg);
+    padding-left: 40px;
+    font-family: principalFontBold;
+    color: #599cf3;
+}
+
+#stop{
+    background-position: 10px center;
+    background-image: url(../../../images/CadilagStructs/pause.svg);
+    padding-left: 40px;
+    font-family: principalFontBold;
+    color: #599cf3;
+}
+
+#add{
+    background-image: url(../../../images/addbutton.png);
+}
+
+#remove{
+    margin-left: -5px;
+    margin-right: -5px;
+    background-image: url(../../../images/rembutton.png);
+}
+
+#search{
+    background-image: url(../../../images/busbutton.png);
+}
+
+#add:hover,#remove:hover,#search:hover,#others:hover,#registroativacao:hover,#resume:hover,#stop:hover,#step:hover{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+.random-btn{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-image: url(../../../images/CadilagStructs/automatic.svg);
+    background-size: 25px 25px;
+    border:none;
+    top: 5px;
+    left: -5px;
+    background-repeat: no-repeat;
+    background-position: 2px center;
+    background-color: #6ea0f6;
+}
+.random-btn:disabled:hover{
+    background-color: #b2b2b2 !important;
+}
+.random-btn:disabled{
+    background-color: #b2b2b2 !important;
+}
+.random-btn:active{
+    background-color: #6ea0f6 !important;
+}
+.random-btn:hover{
+    background-color: #9abcf8;
+}
+
+/**
+*  SUBTOPBAR
+*/
+
+#subtopbar{
+    left: 0px;
+    height:50px;
+    margin: 0px;
+    top:50px;
+    font-size: 14px;
+    position: fixed;
+    z-index: 2001;
+    list-style: none;
+    font-family: principalFont; 
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    z-index: 2000;
+    padding-right: 40px;
+    border-bottom-right-radius: 20px;
+}
+
+#subtopbar.subtopbar-others{
+    top:0px;
+    display: none;
+    opacity: 0;
+    background: rgba(255,255,255,0.5);
+}
+
+#topbar .label,#subtopbar .label {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555555;
+    cursor:default;
+}
+
+#topbar > ul > li,#subtopbar > ul > li{
+    margin-left: 5px;
+    position: relative;
+}
+
+#subtopbar > ul{
+    height: 45px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+#subtopbar > ul > li{
+    float: left;
+}
+
+#subtopbar button{
+    margin: 5px;
+}
+
+#subtopbar input{
+    width: 75px;
+}
+
+#valor, #prioridade, #pilha, #linha, #coluna{
+    height: 30px;
+    width: 70px;
+    font-size:14px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+/**UserDiv*/
+
+#UserDiv{
+    background-color: rgb(255,255,255);
+    text-align: right;
+    font-family: principalFont;
+    padding-right: 10px;
+    padding-left : 60px;
+    padding-top: 8px;
+    width: 140px;
+    border-left: 2px solid rgba(0,0,0,0.25);
+    float: right;
+    font-weight: normal;
+    position: relative;
+    right: 0px;
+    height: 47px;
+    background-image: url(../../../images/CadilagStructs/home.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    margin-top: -10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    cursor: pointer;
+}
+
+#UserDiv:hover ~ #imgUser,#imgUser:hover{
+    width: 60px;
+    height: 60px; 
+    transition: all linear 0.2s;
+}
+
+#UserDiv:hover{
+    background-color: #EFEFEF;
+}
+
+#imgUser:hover ~ #UserDiv{
+    background: #EFEFEF;    
+}
+
+
+#UserDiv > .title{
+    float: left;
+    width: available;
+    text-align: center;
+    margin-right: 10px;
+    width: 70px;
+}
+
+#imgUser{
+    z-index: 1000;
+    width: 55px;
+    height: 55px;
+    right: 0px;	
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    position: relative;
+    float: right;
+    margin-top: -5px;
+}
+
+.usermenu.mobile.toM #UserDiv{
+    width: 60px;
+}
+
+.cssmenu{
+    float:left;
+    z-index: 1006;
+}
+
+.usermenu{
+    right: 0px;
+    z-index: 1005;
+}
+
+.usermenu.mobile.toM{
+    display: block;
+}
+
+.cssmenu > li{
+    float:left;
+}
+
+.usermenu > li{
+    float:right;
+}
+
+.cssmenu,.usermenu{
+    position: absolute;
+    top:0px;
+    left:0px;
+    margin-top:0px;
+    padding-top: 5px;
+    padding-left: 0px;
+    height: 35px;
+
+    -webkit-transition: background 0.2s ease-in;
+    -moz-transition: background 0.2s ease-in;
+    -o-transition: background 0.2s ease-in;
+    -ms-transition: background 0.2s ease-out;
+    transition: background 0.2s ease-in;
+}
+
+.navbar {
+    background-image: url(../../../images/cadilag.svg);
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+    background-size: 40px 40px;
+    background-color: white;
+    top:-10px;
+    height: 55px;
+    cursor:pointer;
+    transition: all 0.2s ease-in;
+    font-size: 12px;
+    padding-right: 5px;
+    border-right: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    width: 220px;
+}
+
+.navbar p {
+    font-family: principalFontThin;
+    font-weight: normal;
+    padding-right: 5px;
+    margin: 0px;
+    margin-top: 5%;
+    position: relative;
+    font-size: 15px;
+
+}
+
+.navbar:hover{
+    height: 55px;
+    background-color: #EFEFEF;
+}
+
+/**EpRunDiv*/
+
+#EpRunDiv{
+    padding-left: 50px;
+    width: 0px;
+    height: 50px;
+    background-image: url(../../../images/CadilagStructs/play.svg);
+    background-size: 25px 25px;
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    border-left: 2px solid rgba(0,0,0,0.25);
+    margin-top: -5px;
+    cursor: pointer;
+    margin-right: 0px;
+    transition: width 0.2s linear;
+}
+
+#EpRunDiv:hover{
+    background-color: rgba(200,200,200,0.5);
+}
+
+#EpRunDiv[disabled='disabled']{
+    width: 50px;
+}
+
+#EpRunDiv > #counterEp > p{
+    margin: 0px;
+    text-align: center;
+}
+
+#EpRunDiv > #counterEp{
+    opacity: 0;
+    box-shadow: 0px 0px 5px #59C0F9;
+    background: #59C0F9;
+    color:white;
+    position: absolute;
+    bottom: 13px;   
+    display: inline-block;
+    padding: 2px;
+    border-radius: 5px;
+    right: 5px;
+    width: 40px;
+}
+
+#EpRunDiv[disabled='disabled'] > #counterEp{
+    opacity: 1;
+}

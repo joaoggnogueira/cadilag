@@ -1,0 +1,239 @@
+@import 'ui.scss';
+/* 
+    Created on : 22/07/2016, 00:01:10
+    Author     : joaog
+*/
+
+
+$red: #ff2d2d;
+$redlight: #ff4646;
+$redbright: #ff6a6a;
+
+$blueddank: rgb(100,120,231);
+$blueglass: rgba(0, 120, 231,0.9);
+$blue: #0078e7;
+$bluelight: #42a4ff;
+$blueareo: #51a3ee;
+$bluelightaero: #6eb7fa;
+
+$green: #5cb85c;
+
+$darkgray: #212121;
+$gray: #414141;
+$lightgray: #616161;
+$brightgray: #818181;
+$whitesmoke: #a1a1a1;
+$whitesmokelight: #eeeeee;
+
+$boxshadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+.withGrid{
+    background-image: url(../images/grid.png);
+}
+
+.switch {
+    border: 3px solid $blue;
+    border-radius: 20px;
+    background: none;
+    > .ball {
+        border-radius: 20px;
+        background: $blue;
+    }
+}
+
+.switch:hover,.switch.checked:hover{
+    border-color: $blueareo;
+    > .ball {
+        background: $blueareo;
+    }
+}
+
+.switch.checked{
+    border-color: $whitesmoke;
+    > .ball {
+        background: $whitesmoke;
+    }
+}
+
+#topbar{
+    background: #fff;
+    box-shadow: $boxshadow;
+
+} 
+
+#projetohud{
+
+    width: 300px;
+    
+    ul{
+        li{
+            .counter{
+                border-radius: 15px;
+                color: white;
+                background: $blue;
+            }
+            .title{
+                color: black;
+                transition: width 0.5s ease-out;
+            }
+        }
+    }
+}
+
+button#leitura,button#addleitura{
+    background-image: url(../images/read.png);
+}
+
+button#partida,button#addpartida{
+    background-image: url(../images/partida.png);
+}
+
+button#aceita,button#addaceita{
+    background-image: url(../images/aceita.png);
+}
+
+button#rejeita,button#addrejeita{
+    background-image: url(../images/rejeita.png);
+}
+
+button#escrita,button#addescrita{
+    background-image: url(../images/write.png);
+}
+
+.dialoghud{
+    background: white;
+    border-radius: 10px;
+    box-shadow: $boxshadow;
+    ul{
+        li{
+            button{
+                background: $whitesmoke;
+                color: white;
+                border: none;
+            }
+            button:hover{
+                box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+#edithud{
+
+    background: white;
+    box-shadow: $boxshadow;
+    border-top: 1px solid #AAA;
+    .cool-radiobutton{
+        background-color: white;
+        border: 2px solid $brightgray;
+        box-shadow: $boxshadow;
+        border-radius: 10px;
+    }
+    .cool-radiobutton.selected{
+        border: 2px solid $blue;
+    }
+}
+
+#workspace{
+
+    > .helperConnection{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+    }
+
+    > .lplumb{
+        background: $blueglass;
+        color: white;
+        border-radius: 5px;
+    }
+
+    > .lplumb:hover{
+        background: $blueglass;
+    }
+
+    > #readdialog{
+        text-align: center;
+        background-color: white; 
+        border-radius: 10px;
+        border: 3px solid $blue;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+
+        > #setEmptyRead{
+            background: white;
+            color: $blue;
+            font-family: myFontCondensed;
+            border: 1px solid $blue; 
+            border-bottom: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        > .closedialog{
+            background: white;
+            color: $blue;
+            font-family: myFontCondensed;
+            border: 1px solid $blue; 
+            border-top: none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        > #setEmptyRead:hover,.closedialog:hover{
+            background: #eef;
+        }
+    }
+    .labelcomponent{
+        border: 2px #5cb85c solid;
+        background: white;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+        transition: box-shadow 0.2s ease-out;
+    }
+    .labelcomponent:hover{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    }
+    > .element{
+        transition: box-shadow 0.2s ease-out;
+        box-shadow: 0 4px 7px rgba(0,0,0,0.4);
+        border: 3px solid $blue;
+        background: white;
+        .warning {
+            background-color: white;
+            border: 3px solid $blue;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-left: none;
+            > .coner {
+                border: 3px solid $blue;
+                background: white;
+                border-right: none;
+                border-top: none;
+            }
+        }
+
+
+    }
+    .element:hover{
+        box-shadow: 0 7px 10px rgba(0,0,0,0.4);
+    }
+    > .element.selected{
+        border: 5px solid $blue;
+        margin-top: -1px;
+        margin-left: -1px;
+    }
+
+    > .nodeelement{
+        border-radius: 50px;
+    }
+
+    > .nodeelement .itemValue{
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        line-height: 50px;
+        font-family: 'Arial';
+    }
+
+
+}

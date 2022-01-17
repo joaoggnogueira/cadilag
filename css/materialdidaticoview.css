@@ -1,0 +1,103 @@
+/* 
+    Created on : 05/04/2016, 10:53:35
+    Author     : joaog
+*/
+
+#voltar{
+    width: 200px;
+    left: calc(50% - 100px);
+    top: 80px;
+    position: absolute;
+}
+
+.content{
+    padding-bottom: 50px;
+}
+
+.wrapper{
+    top: 120px;
+    left: calc(50% - 300px);
+    margin-top: 10px;
+    width: 600px;
+    min-height: 310px;
+    padding: 10px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.descricao{
+    position: relative;
+    text-align: left;
+    left: 0px;
+    width: 60%;
+    color:white;
+}
+
+.label{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.descricao > .title{
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.arquivo{
+    border-left: 4px solid rgba(255,255,255,0.4);
+    position: absolute;
+    text-align: center;
+    width: 38%;
+    color: white;
+    float: right;
+    right: 0px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+.arquivo > .title{
+    border-top: 3px solid rgba(255,255,255,0.4);
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: white;
+    width: 100px;
+    display: inline-block;
+    font-size: 20px;   
+}
+
+.download:active{
+    background-image: url(../images/download.png) !important;
+}
+
+.download:hover{
+    background-image: url(../images/download.png) !important;
+}
+
+.download{
+    display: inline-block;
+    background-image: url(../images/download.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+    border: none;
+    width: 150px;
+    margin-top: 10px;
+}
+
+form{
+    text-align: center;
+}
+.datetime{
+    color:white;
+    font-size: 16px;
+}

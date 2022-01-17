@@ -1,0 +1,481 @@
+/* 
+    Created on : 03/02/2016, 01:26:56
+    Author     : joaog
+*/
+
+.subtitle h1{
+    font-size: 16px;
+    color: rgb(77, 74, 145);
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+body{
+    background-color:#55a1e7;
+}
+
+.topbar{
+    background: rgb(255,255,255);
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+}
+
+.topbar .subtitle{
+    height: 50px;    
+    position: relative;
+    color: #444;
+    margin-top: 5px;
+    float: left;
+    overflow: hidden;    
+    font-size: 17px;
+}
+
+.small-label{
+    font-size: 10px;
+}
+
+.label,.small-label{
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    color: white;
+    margin-left: 10px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.area input{
+    margin-left: 10px;
+}
+
+.area button{
+    margin-bottom: 5px;
+}
+
+.socialBinds{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+
+    top: 70px;
+    left: 600px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 250px;
+}
+
+.socialBinds .label.title{
+    border-left: 3px solid rgba(255,255,255,0.5);
+    margin-left: 10px;
+}
+
+.socialBinds .wrapper{
+    width: calc(50% - 6px);
+    border-color: rgba(255,255,255,0.5); 
+    border-style: solid;
+    border-width: 0px;
+    position: absolute;
+}
+
+.socialBinds .wrapper.wrapper-left{
+    left: 0px;
+    border-right-width: 3px;
+}
+
+.socialBinds .wrapper-right{
+    right: 0px;
+}
+
+.socialBinds .g-signin2{
+    margin-top: 15px;
+}
+
+.socialBinds summary{
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.area{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+
+    top: 70px;
+    left: 20px;
+    width: 545px;
+    height: 340px;
+    border-radius: 5px;
+}
+
+.area > .title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    color: white;
+    width: 100%;
+    border-bottom: 4px solid rgba(255,255,255,0.1);
+}
+
+.area > .title p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.buttons{
+    box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+    top: 420px;
+    left: 20px;
+    height: 60px; 
+    border-radius: 5px;
+}
+
+#inputs input{
+    width: 300px;
+}
+
+#inputs label{
+    margin-left: 10px;
+}
+.socialBinds button,.buttons button,#inputs button,#editsocial{
+    position: relative;
+    height: 40px;
+    top: 10px;
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background:  rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: all linear 0.1s;
+}
+
+#closeSocial{
+    display: none;
+}
+
+#editsocial{
+    width: 50px;
+    height: 90px;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    display: none;
+}
+
+.buttons button:active,#inputs button:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+.buttons button:hover,#inputs button:hover{
+    top: 12px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+}
+
+#inputs{
+    width: 240px;
+    float: left;
+}
+
+#imageuser{
+    position: absolute;
+    right: 15px;
+    font-family: principalFont;
+    margin-top: 10px;
+    width: 190px;
+    height: 190px;
+}
+
+#imageuser .label p{
+    width: 180px;
+}
+
+#imguser{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);    
+    width: 190px;
+    height: 190px;
+    background-size: 100% 100%;
+}
+
+#alertCaps{
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgb(255,255,255);
+}
+
+.info{
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    border-radius: 5px;
+    height: 20px;
+    text-align: center;
+    transition: all linear 0.5s;
+}
+
+.info[state='show']{
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.info:hover{
+    background: rgba(255,0,0,0.2);
+}
+
+.info > p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.info[state='hide'] > p{
+    margin-top: 10px;
+}
+
+.info[state='hide']{
+    opacity: 0;
+    line-height: 0px;
+    height: 0px;
+    margin-top: 0px;
+    display: none;
+}
+
+.progress{
+    width: 100%;
+    height: 20px;
+    background: #f5f5f5;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.progress #float{
+    height: 100%;
+    width: 0%;
+
+    position: relative;
+}
+
+.editpassword{
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    border-radius: 10px;
+    top: 70px;
+    left: 600px;
+    width: 300px;
+    padding: 10px;
+}
+
+.editpassword input{
+    width: 100%;
+}
+
+.editpassword .title{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    color: white;
+    width: 100%;
+    border-bottom: 4px solid rgba(255,255,255,0.1);
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.editpassword input{
+    margin-top: 10px;
+}
+
+.editpassword button{
+    margin-top: 10px;
+}
+
+.editpassword .title p{
+    margin: 0px;
+}
+
+button#editpassword{
+    background-image: url(../images/lockedwhite.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    width: 190px;
+    position: relative;
+    background-position: 10px center;
+}
+
+.editimage{
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top: 70px;
+    left: 600px;
+    width: 500px;
+    height: 560px;
+}
+
+.editimage table{
+    text-align: center;
+}
+
+button#editimage{
+    position: absolute;
+    height: 30px;
+    line-height: 30px;
+    width: 190px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.frame {
+    border: 3px solid rgba(255,255,255,0.1);
+    box-shadow: inset 0px 0px 10px #000;
+    margin-bottom: 5px;
+}
+
+.frame > img { width: 100%; }
+
+.frame input{
+    position: absolute;
+    width: 470px;
+    margin-left: 10px;
+    top: 10px;
+    background: rgba(255,255,255,0.5);
+}
+#controls { width: 100%; }
+
+#controls button {
+    border-radius: 5px;
+    color: #fff;
+    background:  rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.loadingscreen{
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    background-image: url('../images/load.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+}
+
+input:placeholder-shown {
+    background: white;
+}
+
+#imageoptions{
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(0,0,0, 0.4);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 70px;
+    left: 530px;
+    padding-bottom: 70px;
+    background-image: url(../images/helpimagebreak.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 60px 60px;
+}
+
+#imageoptions > button{
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+    border-bottom: 5px solid rgba(255,255,255,0.1);
+    width: 50px;
+    height: 55px;
+    transition: border-bottom 0.05s linear;
+}
+
+#imageoptions > button:active{
+    border-bottom: 0px solid rgba(255,255,255,0.5);
+}
+
+#imageoptions > button:hover{
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+#reload{
+    background-image: url('../images/reload.png');
+}
+
+#usechar button{
+    background-color: #1A6;
+    color: white;
+}
+
+#usechar{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+#usedefault button{
+    background-color: #3078e7;
+    color: white;
+}
+
+#usedefault{
+    position: absolute;
+    margin-top: -50px;
+    right: 10px;
+}
+
+#usechar button{
+    background-color: #1A6;
+    color: white;
+}
+
+#usechar{
+    position: absolute;
+    margin-top: -50px;
+    left: 10px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(../images/cadilag.svg);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+}
+
+.editimage form{
+    margin: 0px;
+}
+

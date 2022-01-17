@@ -1,0 +1,229 @@
+/* 
+    Created on : 17/12/2016, 16:32:39
+    Author     : joaog
+*/
+
+#content {
+    position: absolute;
+    top: 60px;
+    left: 305px;
+    min-width: 300px;
+}
+
+#content .thead{
+    background: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#content th{
+    vertical-align: top;
+}
+
+#content .thead.title-prm{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    background-image: url(../../../images/coding.svg);
+    background-size: 40px 40px;
+    background-repeat:no-repeat;
+    padding-right: 70px;
+    background-position: right center;
+}
+
+#content .thead.title-scn:hover{
+    font-weight: bold;
+}
+
+#content .thead.title-scn{
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: default;
+}
+
+#content .title{
+    color:white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    min-width: 310px;
+}
+
+#content .title:not(.empty){
+    font-weight: bold;
+}
+
+#content tr:not(:first-child) td,#content tr:not(:first-child) th{
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+#content .card .head{
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+
+#content .card .body{
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+#content .card .body td.small p{
+    text-align: right;
+    margin: 2px;
+    font-size: 12px;
+}
+
+#content .list{
+    display: none;
+}
+
+#content .card{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+#content ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+#content ul li{
+    min-width: 300px;
+    list-style: none;
+    margin: 5px;
+    text-align: center;
+}
+
+.optionCode{
+    width: 100%;
+    height: 40px;
+    border:none;
+    box-shadow: 0px 0x 5px rgba(0,0,0,0.5); 
+    color:white;
+    text-shadow: 2px 2px 2px #000000; 
+}
+
+.optionCode.edit{
+    background-color: #0078e7;
+    background-image: url(../../../images/pencil.svg);
+    background-size: 60px 60px;
+    background-repeat:no-repeat;
+    padding-right: 30px;
+    background-position: right center;
+}
+
+.optionCode.edit:hover{
+    background-color: #42a4ff;
+}
+
+.optionCode.edit:active{
+    background-color: #90c8fd;
+}
+
+.optionCode.save{
+    background-color: #70cc32;
+    background-image: url(../../../images/upload.svg);
+    background-size: 50px 50px;
+    background-repeat:no-repeat;
+    padding-right: 30px;
+    background-position: right center;
+}
+
+.optionCode.save:hover{
+    background-color: #92d863;
+}
+
+.optionCode.save:active{
+    background-color: #b7e598;
+}
+
+.optionCode.reset:hover{
+    background-color: #4c70ff;
+}
+
+.optionCode.reset:active{
+    background-color: #7590ff;
+}
+
+.optionCode.reset{
+    background-color: #0033ff;
+    background-image: url(../../../images/reload.png);
+    background-size: 15px 15px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    border-radius: 5px;
+    float: right;
+    height: 30px;
+    padding: 0px;
+}
+
+.optionCode.cancel{
+    background-color: #666;
+    background-image: url(../../../images/close.svg);
+    background-size: 15px 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px !important;
+    border-radius: 5px;
+    float: right;
+    height: 30px;
+    padding: 0px;
+}
+
+.optionCode.cancel:hover{
+    background-color: #888;
+}
+
+.optionCode.cancel:active{
+    background-color: #aaa;
+}
+
+.optionCode.delete{
+    background-color: #e9322d;
+    background-image: url(../../../images/garbage.svg);
+    background-size: 60px 60px;
+    background-repeat:no-repeat;
+    padding-right: 30px;
+    background-position: right center;
+}
+
+.optionCode.delete:hover{
+    background-color: #ed5854;
+}
+
+.optionCodep.delete:active{
+    background-color: #f28e8b;
+}
+
+
+#empty{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-top: none !important;
+    text-align: center;
+    height: 100px;
+    background-image: url(../../../images/CadilagStructs/empty-box.svg);
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    vertical-align: bottom;
+}

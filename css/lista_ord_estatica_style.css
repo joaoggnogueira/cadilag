@@ -1,0 +1,44 @@
+/* 
+    Created on : 26/08/2017, 15:39:11
+    Author     : joaog
+*/
+
+.staticArrayIndex.highlighted{
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.staticArrayNext.highlighted{
+    background: black !important;
+}
+.staticArrayNext p{
+    margin: 0px;
+}
+
+.staticArrayNext{
+    width: 71px;
+    height: 25px;
+    background: #b1b1b1;
+    position: absolute;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    line-height: 25px;
+    color:black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 0;
+}
+
+.staticArrayNext.array0{
+    border-left: 1px solid black;
+    z-index: 1;
+}
+
+.staticArrayNext.active{
+    background: #6464ff;
+    color: white;
+}

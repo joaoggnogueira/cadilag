@@ -1,0 +1,314 @@
+.buttonclosearea{
+    width: 620px;
+    float: left;
+    height: 50px;
+}
+
+.topbar > button{
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.topbar{
+    text-align: left;
+}
+
+.content{
+    left: calc(50% - 300px);
+    max-width: 620px;
+    top: 75px;
+    text-align: left;
+    position: absolute;
+}
+
+.vazio{
+    text-align: center;
+}
+
+.content > .atividadearea{
+    width: 600px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    min-height: 260px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.content > .arquivoarea{
+    margin-top: 20px;
+    width: 600px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    min-height: 260px;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    float: left;  
+    margin-bottom: 20px;
+}
+
+.content > .arquivodetail{
+    width: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    min-height: 260px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    float: left;  
+}
+
+.content > .arquivodetail > form > .download{
+    float: left;
+    margin-right: 10px;
+    background-image: url(../images/download.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+}
+
+.content > .arquivodetail > form > button.delete{
+    float: left;
+    background-image: url(../images/deleteBlack.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 50px;
+}
+
+.content > .arquivoarea > form > select,.content > .arquivoarea > form > input{
+    color: black;
+}
+
+.content > .arquivoarea > form > .label,.content > .arquivodetail > .label{
+    font-size: 18px;
+}
+
+.smalllabel{
+    font-size: 16px;
+    color: white;
+}
+
+.content > .arquivodetail > .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    text-align: center;
+    background-image: url(../images/file.png);
+    background-size: 25px 25px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.content > .arquivoarea > .title{
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    text-align: center;
+    background-image: url(../images/files.png);
+    background-size: 25px 25px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.content > .arquivoarea > .subtitle{
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Raleway",sans-serif;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    text-align: center;
+}
+
+.content > .arquivoarea > form > input{
+    width: 100%;
+}
+
+.content > .arquivoarea > form > select{
+    width: 100%;
+}
+
+.content > .arquivoarea > form > input[type=file] {
+    margin-top: 10px;
+    color: white;
+}
+
+.content > .arquivoarea > form > button{
+    margin-top: 10px;
+}
+
+.content > .atividadearea > .description{
+    width: 380px;
+    padding: 10px;
+    position: relative;
+}
+
+.label{
+    position: relative;    
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+}
+
+.text{
+    position: relative;    
+}
+
+.content > .atividadearea > .info{
+    width: 180px;
+    right: 10px;
+    top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+}
+
+.atividadearea  button{
+    margin-bottom: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-family: "Raleway",sans-serif;
+    background-color:  rgba(255,255,255,0.1);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 140px;
+    color: white;
+    border: none;
+    text-align: left;
+    padding-left: 60px;
+    transition: box-shadow 0.1s linear;
+}
+
+.atividadearea  button:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+
+.editatv{
+    margin-bottom: 0px;
+    background-image: url(../images/editbig.png);
+    background-size: 55px 55px;
+    background-position: 5px 50%;
+}
+.deleteatv{
+    margin-bottom: 0px;
+    background-image: url(../images/delete.png);
+    background-size: 55px 55px;
+    background-position: 5px 50%;
+}
+
+.fechar{
+    margin: 20px;
+}
+
+.atividade button{
+    border: 1px solid rgba(255,255,255,0.1);
+    font-family: "Raleway",sans-serif;
+    background-color:  rgba(255,255,255,0.1);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 140px;
+    color: white;
+    border: none;
+    text-align: left;
+    padding-left: 60px;
+    transition: box-shadow 0.1s linear;
+}
+
+.atividade button:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+.columnnames{
+    height: 20px;
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    margin-top: 10px;  
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+    background: -o-linear-gradient(left,rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+    background: -moz-linear-gradient(left,rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+    background: linear-gradient(to right,rgba(0,0,0,0.1),rgba(0,0,0,0.2),rgba(0,0,0,0.1)); 
+}
+
+.arquivosarea{
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.5);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+}
+
+.arquivosarea .arquivo{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.arquivoarea .arquivo:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+}
+
+.arquivoarea .arquivo:nth-child(odd){
+    background-color: rgba(0,0,0,0.3);
+}
+
+.arquivo:hover{
+    background-color: rgba(255,255,255,0.2) !important;
+}
+
+.columnnames > .descricao,.columnnames > .data,.columnnames > .hora{
+    float: left;
+    line-height: 20px;
+    height: 20px;
+}
+
+.arquivo > .descricao,.arquivo > .data,.arquivo > .hora{
+    float: left;
+    line-height: 30px;
+    height: 30px;
+}
+
+.arquivo > .descricao,.columnnames > .descricao{
+    width: 410px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.arquivo > .data,.columnnames > .data{
+    width: 91px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+.arquivo > .hora,.columnnames > .hora{
+    width: 75px;
+    text-align: center;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+#titulo-atividade{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+#descricao-atividade{
+    margin-bottom: 10px;
+    font-weight: 100;
+}

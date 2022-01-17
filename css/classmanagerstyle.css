@@ -1,0 +1,321 @@
+/* 
+    Created on : 07/02/2016, 14:55:25
+    Author     : joaog
+*/
+
+
+.level[final=final]{
+    width: 235px;
+    margin-right: 0px;
+
+}
+
+.level[final=final] .optionl finalbutton{
+    opacity: 0;
+    bottom: 0px;
+    transition: all linear 0.2s;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.level[final=final] .optionl:hover finalbutton{
+    opacity: 1;   
+}
+
+.level[final=final] .optionl{
+    transition: padding-bottom linear 0.2s;
+}
+
+.level[final=final] .optionl:hover{
+    padding-bottom: 40px;
+}
+
+
+.level{
+    margin-right: 5px;
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.level[number='2']{
+    width: 250px;
+}
+
+.vazio p{
+    line-height: 330px;
+    margin: 0px;
+}
+.vazio{
+    height: 330px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    width: 255px;
+}
+
+.optionl:hover{
+    background: rgba(0,0,0,0.2);
+    background-image: url(../images/next.png);
+    background-position: 100%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+.optionl p{
+    margin: 0px;    
+    position: relative;
+}
+.area{
+   font-family: "Raleway";
+   font-size: 200;
+   width: 900px;
+   height: 400px;
+   background: rgba(0,0,0,0.3);
+   box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+   position: absolute;
+   left: 50px;
+   top: 100px;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.subarea{
+    width: 100%;
+    height: 100%;
+    border-right: 5px solid rgba(0,0,0,0.5); 
+    float: left;
+    overflow: auto;
+}
+.level[final=final] .subarea{
+    border-right: none;
+}
+.level{
+    margin-right: 5px;
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.level[number='2']{
+    width: 250px;
+}
+
+.optionl:focus{
+    border: 1px solid white;
+}
+
+.level[number='1'] > .subarea > .optionl:first-child{
+    border-top-left-radius: 10px;
+}
+.level[number='4'] > .subarea > .optionl:first-child{
+    border-top-right-radius: 10px;
+}
+
+.optionl{
+    border:none;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;    
+    box-shadow:0px 2px 0px 0px rgba(0,0,0, 0.4);   
+    position: relative;
+}
+
+.optionl:hover{
+    background: rgba(0,0,255,0.2);
+    background-image: url(../images/next.png);
+    background-position: 100%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+.optionl p{
+    margin: 0px;    
+    position: relative;
+}
+.optionl[selected=selected]:hover{
+    background-image: url(../images/prev.png);
+}
+
+.optionl[selected=selected]{
+    background: rgba(0,0,255,0.4);
+    font-weight: bold;
+    background-image: url(../images/next.png);
+    background-position: 100%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+
+.level[final=final] .optionl[selected=selected]{
+    padding-bottom: 40px;
+    background-image: url(../images/check.png);
+    background-position: 90%;
+    background-size: 25px 25px;
+}
+
+.buttonarea{
+   font-family: "Raleway";
+   font-weight: 500;
+   height: 60px;
+   background: rgba(0,0,0,0.3);
+   position: absolute;
+   left: 50px;
+   top: 510px;
+   border-radius: 10px;
+   box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+   overflow: hidden;
+}
+
+.buttonarea form{
+    float: left;
+}
+
+.buttonarea button{
+    float: left;
+    position: relative;
+    top: 10px;
+    width: 200px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background:  rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+#save{
+    background: rgba(50,50,255,0.7);
+    animation: blink 1s infinite linear;
+    -webkit-animation: blink 1s infinite alternate;
+    -moz-animation: blinkmoz 1s infinite alternate;
+    -o-animation: blinko 1s infinite alternate;
+    -ms-animation: blinkms 1s infinite alternate;
+}
+
+#save:disabled{
+    background: rgba(0,0,0,0.4);
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    -ms-animation: none;
+}
+
+@-webkit-keyframes blink {
+    from {
+        box-shadow: 0px 0px 5px rgba(50,50,255,0.2);
+    }
+    to {
+        box-shadow: 0px 0px 15px rgba(50,50,255,1);
+    }
+}
+
+@-moz-keyframes blinkmoz {
+    from {
+        box-shadow: 0px 0px 5px rgba(50,50,255,0.2);
+    }
+    to {
+        box-shadow: 0px 0px 15px rgba(50,50,255,1);
+    }
+}
+
+
+@keyframes blinkk {
+    from {
+        box-shadow: 0px 0px 5px rgba(50,50,255,0.2);
+    }
+    to {
+        box-shadow: 0px 0px 15px rgba(50,50,255,1);
+    }
+}
+
+
+@-o-keyframes blinko {
+    from {
+        box-shadow: 0px 0px 5px rgba(50,50,255,0.2);
+    }
+    to {
+        box-shadow: 0px 0px 15px rgba(50,50,255,1);
+    }
+}
+
+@-ms-keyframes blinkms {
+    from {
+        box-shadow: 0px 0px 5px rgba(50,50,255,0.2);
+    }
+    to {
+        box-shadow: 0px 0px 15px rgba(50,50,255,1);
+    }
+}
+
+
+selectedbutton{
+    display: none;
+}
+
+.level[final=final] .optionl[selected=selected] finalbutton{
+    display: none;
+}
+
+.level[final=final] .optionl[selected=selected] selectedbutton{
+    display: block;
+}
+
+.descriptionbar{
+    left: 50px;
+    top: 65px;
+    
+    width: 900px;
+    height: 25px;
+    
+    background: rgba(0,0,0,0.3);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.6);
+    position: absolute;
+    overflow: hidden;
+    
+    border-radius: 5px;
+
+}
+.descriptionbar .description{
+    height: 100%;
+    border-right: 5px solid rgba(0,0,0,0.5); 
+    float:left;
+    width: 200px;
+    text-align: center;
+    color:white;
+    font-family: "Raleway";
+    font-weight: 200;
+
+}
+.descriptionbar .description p{
+    margin: 0px;   
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.infos{
+    left: 970px;
+    top: 70px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    position: absolute;
+}
+
+.infos > .title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 5px solid rgba(255,255,255,0.3);
+    color: white;
+}
+
+.infos > .description{
+    color: white;
+}
+

@@ -1,0 +1,27 @@
+/* 
+    Created on : 06/02/2018, 17:24:02
+    Author     : Acer
+*/
+
+
+.element.black{
+    background: black !important;
+}
+
+.element.black .itemValue{
+    color: white;
+}
+
+.element.red{
+    background: red !important;
+}
+
+.element.red .itemValue{
+    color: white;
+}
+
+.formmain{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}

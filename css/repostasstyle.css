@@ -1,0 +1,314 @@
+
+.content{
+    position: absolute;
+    width: 700px;
+    top: 75px;
+    left: 25px;
+    transition: margin-left 0.4s ease-out;
+}
+
+.topbar > button{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.content > .respostasarea{
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+.content > .respostasarea > .title{
+    font-family: principalFont;
+    font-size: 30px;
+    border-bottom: 4px solid rgba(255,255,255,0.4);
+}
+
+.content > .respostasarea > .repostas > .grupo >.resposta{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    border-top: 5px solid rgba(255,255,255,0.4);
+    min-height: 150px;
+    overflow: hidden;
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea{
+    position: relative;
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea >  .info{
+    position: relative;    
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea >  .info > .userlabel > img{
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea >  .info > .userlabel > .title{
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 50px;
+    height: 100%;
+}
+.content > .respostasarea > .repostas > .grupo > .toparea >  .info > .userlabel{
+    background: rgba(255,255,255,0.2);    
+    width: 250px;
+    margin-left: 20px;
+    
+}
+.content > .respostasarea > .repostas > .grupo > .toparea > .info > .label{
+    font-size: 14px;
+    font-family: principalFont;
+    position: relative;
+    max-width: 180px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea > .info > .label > p{
+    margin: 0px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea > .assunto{
+    float: right;
+    width: 400px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea > .assunto > .label{
+    font-size: 14px;
+    font-family: principalFont;
+}
+
+.content > .respostasarea > .repostas > .grupo{
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    position: relative;
+    min-height: 40px;
+    margin-bottom: 20px;
+}
+.content > .respostasarea > .repostas > .grupo > .resposta[editable=editable]{
+    padding-bottom: 50px;   
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .text{
+    height: 100%;
+    position: relative;
+    width: 400px;
+    margin-left: 125px;
+    min-height: 100px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote
+{
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > *
+{
+    margin-left: 10px;
+}
+
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .title{
+    margin-top: 10px;
+    font-family: principalFont;
+    border-top: 3px solid rgba(255,255,255,0.3);
+    transition: border-top-color 0.2s linear;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .up{
+    position: relative;
+    height: 30px;
+    background: rgba(255,255,255,0.1);
+    background-image: url(../images/up.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px 0%;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: rgb(0,255,0);
+}
+
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .up[voted=voted]{
+    border: 2px solid rgb(0,255,0);
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .up > p{
+    margin: 0px;
+    margin-left: 50px;
+
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .down[voted=voted]{
+    border: 2px solid red;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .down{
+    position: relative;
+    margin-top: 5px;
+    height: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    background-image: url(../images/down.png);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px 0%;
+    border: 2px solid transparent;
+    line-height: 30px;
+    color: #F00;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .vote > .down > p{
+    margin: 0px;
+    margin-left: 50px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .data{
+    height: 20px;
+    position: relative;
+    width: 350px;
+    margin-left: 125px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: principalFont;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info{
+    position: absolute;
+    margin-top: 10px;
+    width: 150px;
+    right: 10px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info > .label{
+    font-size: 14px;
+    font-family: principalFont;
+    position: relative;
+    max-width: 180px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info > .userlabel{
+    background: rgba(255,255,255,0.2);    
+    width: 100%;
+}
+
+.userinfo img{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info > .userlabel > img{
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info > .userlabel > .title{
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 50px;
+    height: 100%;
+}
+
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .data > p{
+    line-height: 20px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .info{
+    position: absolute;
+}
+
+
+.resposta .deletebtn{
+    font-family: principalFont;
+    padding: 10px;
+    line-height: 15px;
+    width: 100%;
+    color: white;
+    background: rgba(255,255,255,0.1);   
+    margin: 1px;
+}
+
+.resposta .editbtn:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    box-shadow: 0px 0px 10px #2980B9;
+}
+
+.toparea .showbtn:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    box-shadow: 0px 0px 10px #2980B9;
+}
+
+.resposta .deletebtn:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    box-shadow: 0px 0px 10px #2980B9;
+}
+
+.resposta .editbtn{
+    font-family: principalFont;
+    padding: 10px;
+    line-height: 15px;
+    width: 100%;
+    color: white;
+    background: rgba(255,255,255,0.1);  
+    margin: 1px;
+}
+
+.toparea .showbtn{
+    clear: both;
+    font-family: principalFont;
+    padding: 10px;
+    line-height: 15px;
+    width: 660px;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.2),rgba(255,255,255,0.1));
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.editarea{
+    position: fixed;
+    left: 700px;
+    width: 500px;
+    top: 75px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 10px;
+    color: white;
+    z-index: 1000;
+}
+
+.editarea > .title{
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    font-size: 20px;
+    font-family: principalFont;
+    text-align: center;
+}
+
+.editarea > form > textarea{
+    width: 500px;
+    resize: vertical;
+    border-radius: 0px;
+    color: black;
+}
+
+.editarea > form > button{
+    margin-top: 10px;
+}

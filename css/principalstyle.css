@@ -1,0 +1,666 @@
+a:not(.notify-btn):focus{
+    box-shadow: 0px 0px 5px white;
+    border: 2px solid white;
+    text-decoration: underline;
+}
+
+body{
+    margin: 0px;
+    background-color: #55a1e7;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .1) 25%, 
+        rgba(255, 255, 255, .2) 26%, 
+        transparent 27%, transparent 74%, 
+        rgba(255, 255, 255, .2) 75%, 
+        rgba(255, 255, 255, .2) 76%, 
+        transparent 77%, transparent), 
+        linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .1) 25%
+        , rgba(255, 255, 255, .2) 26%, transparent 27%, transparent 74%, 
+        rgba(255, 255, 255, .2) 75%, rgba(255, 255, 255, .1) 76%, 
+        transparent 77%, transparent);
+    height:100%;
+    background-size:50px 50px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(../images/cadilag.svg);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+}
+
+.topbar{
+    background: rgb(255,255,255);
+    transition: margin-left 0.4s ease-out;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.2);
+    z-index: 1005;
+    border-bottom: 1px solid #888;
+}
+
+.topbar .title{
+    position: relative;
+    font-size: 20px;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    width: calc(100% - 350px);
+    text-align: center;
+}
+
+.topbar .subtitle{
+    height: 30px;    
+    position: relative;
+    color: #444;
+    margin-top: 5px;
+    float: left; 
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+.topbar .subtitle h1{
+    font-size: 16px;
+    color: rgb(77, 74, 145);
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+.title p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+
+.topbar #exit{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: right;
+}
+
+.topbar #exitTitle{
+    margin-right: 20px;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    float: right;
+    line-height: 50px;
+}
+
+#exitTitle p{
+    margin-top: 0px;
+}
+
+a#myTopic::before{
+    content:"";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -1;
+}
+
+#myTopic{
+    padding-left: 80px;
+    background-color: transparent;
+}
+
+#newTopic{
+    background-color: rgba(0,0,0,0.4); 
+}
+.notify-btn{
+    right: 80px !important;
+}
+.notify-tab{
+    right: 80px !important;
+}
+#quit{
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+    margin-top: -5px;
+}
+
+#quit .fa{
+    font-size: 30px;
+    line-height: 20px;
+}
+
+#quit:focus{
+    text-decoration: underline;
+}
+
+.buttonW{
+    display: inline-block;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 18px;
+    width: max-content;
+    line-height: 35px;
+    font-family: Raleway;
+}
+
+.sidebar .buttonW{
+    width: calc(100% - 40px);
+}
+
+.sidebar{
+    transition: left 0.4s ease-out;
+    width: 260px;
+    top:0px;
+    height: calc(100% - 115px);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    background-color: rgba(0,0,0,0.5);
+    padding-bottom: 30px;
+    padding-top: 85px;
+    position: absolute;
+    z-index: 1001;
+    border-left: none;
+}
+
+.sidebar:hover > .title{
+    border-top-color: rgba(255,255,255,0.9);
+}
+
+.sidebar > .title{
+    transition: border-top-color 0.2s linear ;
+    width: calc(100% - 150px);
+    border-top: 5px solid rgba(255,255,255,0.4);
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#imguser{
+    float: right;
+    height: 120px;
+    width: 120px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    overflow: hidden;
+    right: 10px;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #AAA;
+}
+
+button,.buttonW{
+    position: relative;
+    height: 35px;
+    top: 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background:  rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+button:active,.buttonW:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+button:hover,.buttonW:active{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    top: 11px;
+}
+
+.subarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    background: rgba(0,0,0,0.4);
+    position: relative;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255, 0.3);
+}
+
+.subarea p{
+    line-height: 20px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.area{
+    position: absolute;
+    width: calc(100% - 620px);
+    top: 75px;
+    left: 300px;
+}
+
+.sidecontent{
+    position: absolute;
+    width: 300px;
+    top: 55px;
+    right: 10px;
+}
+
+.sidecontent > .subarea{
+    width: 280px;
+    margin-left: 10px;
+}
+
+.sidecontent > .subarea > .title{
+    height: 30px;
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 200;
+    text-align: left;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+.sidecontent > .subarea > form{
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.sidecontent > .subarea > form > input{
+    width: calc(100% - 20px);
+    height: 40px;
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+.sidecontent > .subarea > form > input:focus{
+    background-image:none;
+}
+
+.sidecontent > .subarea > form > input::-webkit-input-placeholder {
+    color: #777;
+    font-weight: bold;
+}
+
+.sidecontent > .subarea > form > input:focus::-webkit-input-placeholder {
+    color: #BBB;
+    font-weight: bold;
+}
+
+.sidecontent > .subarea > form > input:-moz-placeholder { /* Firefox 18- */
+    color: #777;
+    font-weight: bold;
+}
+
+.sidecontent > .subarea > form > input:focus::-moz-placeholder {
+    color: #BBB;
+    font-weight: bold;
+}
+
+.sidecontent > .subarea > form > input::-moz-placeholder {  /* Firefox 19+ */
+    color: #777;  
+    font-weight: bold;
+}
+
+.sidecontent > .subarea > form > input:focus:-ms-input-placeholder {
+    color: #BBB;
+    font-weight: bold;
+}
+.sidecontent > .subarea > form > input:-ms-input-placeholder {  
+    color: #777;  
+    font-weight: bold;   
+}
+
+.topicosarea > .title{
+    font-size: 25px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    border-bottom: 4px solid rgba(255,255,255,0.4);
+    transition: border-bottom-color 0.2s linear; 
+}
+
+.topicosarea:hover > .title{
+    border-bottom-color: rgba(255,255,255,0.9);
+}
+.topicosarea .title p{
+    line-height: 25px;
+}
+
+.topicos{
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255,255,255,0.4);  
+}
+
+.topicos a:focus{
+    background: rgba(255,255,255,0.1);
+}
+
+.topicos .topico-area .topico-navbar{
+    float: right;
+    width: 0px;    
+    height: 40px;
+    position: relative;
+    transition: none;
+    background-image: url(../images/topico-option.svg);
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.topicos .topico{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: none;
+}
+
+.topicos .topico-options{
+    text-align: center;
+    right: 0px;
+    height: 100px;
+    position: absolute;
+    margin-top: -10px;
+    z-index: 2000;
+}
+.topicos .topico-options button{
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+.topicos .topico-options ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.topicos .topico-options li{
+    list-style: none;
+}
+
+.topicos .topico-area .topico-navbar:hover{
+    background-color: rgba(255,255,255,0.3); 
+}
+
+.topicos .topico-area.withOption:hover .topico-navbar{
+    width: 50px;    
+    border-top: 1px solid rgba(255,255,255,0.4);
+    position: absolute;
+    float: right;
+    height: 60px;
+    right: 0px;
+    transition: 0.2s ease-out all;
+}
+
+.topicos .topico-area.withOption:hover .topico{
+    width: calc(100% - 50px);
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    transition: 0.2s ease-out all;
+}
+
+.topicos .topico:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+.topicos .topico > .title{
+    color: white;
+    overflow: hidden;
+    font-size: 18px;
+    height: 30px;
+    float: left;
+}
+
+.topicos .topico > .time{
+    color: white;
+    font-size: 16px;
+    float: right;   
+    text-align: right;
+}
+
+.topicos .topico > .comment{
+    color: white;
+    font-size: 16px;
+    float: right;   
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 30px;
+    padding-left: 35px;
+    background-image: url(../images/comments.png);
+    background-position: -10px 50%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.topicos .topico > .comment > p{
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.topicos .topico > .time > p{
+    margin: 0px;
+    margin-right: 10px;
+    line-height: 40px;
+}
+.topicos .topico > .title > p{
+    margin: 0px;
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+.topicosarea > .pageselect{
+    margin-bottom: 10px;
+}
+
+.topicosarea > .pageselect > button:disabled{
+    opacity: 0.4;
+}
+
+.topicosarea > .pageselect > button[atual=atual]{
+    background: rgba(255,0,0,0.6);
+}
+.topicos > a,a.subarea{
+    display: inline-block;
+    width: 100%;
+}
+
+a.subarea{
+    padding-left: 10px;
+    width: calc(100% - 10px);
+}
+
+.topicos > a > .more{
+    border-top: 1px solid rgba(255,255,255,0.4);
+    text-align: center;
+    cursor: pointer;
+}
+.topicos > a > .more > p{
+    height: 40px;
+    line-height: 40px;
+}
+.topicoinfos{
+    clear: both;
+    color: #DDD;
+    height: 20px;
+    width: 100%;
+    background: rgba(255,255,255,0.2)
+}
+.pageselect bold{
+    margin-top: 20px;
+}
+
+a:visited{
+    color:white;
+    text-decoration: none;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;    
+}
+
+#atvcont:hover{
+    border-bottom: 0px solid chartreuse; 
+    margin-top: 2px;
+}
+
+#status{
+    margin-top: 0px;
+    transition: border-bottom 0.1s linear, margin-top 0.1s linear;
+    cursor: pointer;
+}
+
+#atvcont{
+    margin-top: 0px;
+    border-bottom: 2px solid chartreuse;
+    transition: border-bottom 0.1s linear, margin-top 0.1s linear;
+    cursor: pointer;
+}
+
+.contador{
+    width: calc(100% - 40px);
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.topicouser{
+    height: 20px;
+    font-size: 16px;
+    position: relative;
+    float: left;
+}
+
+.abouttopic{
+    height: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+    position: relative;
+    float: right;
+}
+
+.locked{
+    background-image: url(../images/lockedwhite.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+}
+
+.footer p{
+    margin: 0px;
+}
+
+.footer{
+    color: white;
+    line-height: 18px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#empty{
+    text-align: center;
+}
+
+.buttonW::after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;   
+    opacity: 0.5;
+    content: "";
+    transition: opacity 0.1s ease-out;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 10px center;
+}
+
+.buttonW:hover::after{
+    opacity: 1;
+}
+.mytopic-img::after{
+    background-image: url(../images/question-class-note-symbol.svg);
+}
+
+.class-img::after{
+    background-image: url(../images/multiple-users-silhouette.svg);
+}
+
+.lock-img::after{
+    background-image: url(../images/lock.png);
+}
+
+.folder-img::after{
+    background-image: url(../images/folder.svg);
+}
+
+.structure-img::after{
+    background-image: url(../images/hierarchical-structure.svg);
+}
+
+.nodegraph-img::after{
+    background-image: url(../images/CadilagStructs/nodesgraph.png);
+}
+
+.edit-img::after{
+    background-image: url(../images/pencil.svg);
+}
+
+#edit{
+    width: calc(100% - 170px);
+    margin-bottom: 1px
+}
+
+#options{
+    margin-top: 30px;
+}
+
+.shake{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97);
+    transform: translate3d(0, 0, 0);
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(0px, -1px, 0px);
+    }
+
+    20%, 80% {
+        transform: translate3d(0px, 2px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0px, -4px, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0px, 4px, 0px);
+    }
+}
+
+.topbar .resposives_buttons{
+    display: none;
+}
+

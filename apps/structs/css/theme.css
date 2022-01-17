@@ -1,0 +1,87 @@
+.algoritmo > .code p,
+#StructDiv > .code p {
+    color: #666;
+}
+
+.code p b.high:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.code p b {
+    color: #111;
+    font-size: 13px;
+}
+.code p c.high:hover{
+    background: rgba(63,63,123,0.1);
+}
+
+.code p c {
+    color: chocolate;
+    font-size: 13px;
+}
+
+.code p d.high:hover{
+    background: rgba(102,170,102,0.1);
+}
+
+.code p d {
+    color: #6A6;
+    font-size: 13px;
+}
+
+.code p e.high:hover{
+    background: rgba(170,102,102,0.1);
+}
+
+.code p e {
+    color: #F66;
+    font-size: 13px;
+}
+
+.code p f.high:hover{
+    background: rgba(102,170,102,0.1);
+}
+
+.code p f {
+    color: #1A6;
+    font-size: 13px;
+}
+
+.code p g.high:hover{
+    background: rgba(102,102,170,0.1);
+}
+
+.code p g {
+    color: #88F;
+    font-size: 16px;
+}
+
+.code p h.high:hover{
+    background: rgba(102,170,102,0.1);
+}
+
+.code p h {
+    color: #696;
+    font-size: 16px;
+}
+
+.code p j.high:hover{
+    background: rgba(170,102,170,0.1);
+}
+
+.code p j {
+    color: #A6A;
+    font-size: 14px;
+}
+
+.code p struct.high:hover{
+    background: rgba(102,102,170,0.1);
+}
+
+.code p struct {
+    color: #0048e7;
+    font-size: 14px;
+}
+.code p struct:hover {
+    text-decoration: underline;
+}

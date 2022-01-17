@@ -1,0 +1,117 @@
+/* 
+    Created on : 18/04/2018, 18:11:46
+    Author     : Acer
+*/
+.topbar label{
+    float:left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px !important;
+}
+
+.topbar select{
+    margin: 0px;
+    height: 25px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.area{
+    left: 0px;
+}
+
+.solicitacao{
+    width: 100%;
+}
+
+.solicitacao > .title {
+    width: 100%;
+    position: absolute;
+}
+
+.solicitacao > .title {
+    margin-left: 75px;
+    width: calc(100% - 75px);
+    position: absolute;
+}
+
+.solicitacao button.pure-button {
+    width: calc(50% - 75px/2);
+    top: 40px;
+    position: absolute;
+    float: none;
+}
+
+.solicitacao button.pure-button.recusar {
+    right: 0px;
+}
+
+.solicitacao button.pure-button.aceitar {
+    left: 75px;
+}
+
+.area{
+    width: 100%;
+}
+
+#icon{
+    display: none;
+}
+
+
+.topbar .resposives_buttons button.action{
+    background: #385875;
+    border-bottom: 5px solid #7b9fc0;
+    color: white;
+    margin-left: 2px;
+    margin-right: 7px;
+}
+.topbar .resposives_buttons button{
+    width: 50px;
+    height: 50px;
+    color: #333;
+    background: white;
+    border: none;
+    top:0px;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #666;
+    font-size: 30px;
+}
+
+.topbar .resposives_buttons{
+    display: block;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+    display: none;
+}

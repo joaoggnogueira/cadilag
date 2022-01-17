@@ -1,0 +1,111 @@
+/* 
+    Created on : 26/03/2017, 00:42:27
+    Author     : joaog
+*/
+
+.dinamicSmallDotLinha{
+    cursor: grab;
+    cursor:pointer;
+    width:40px; 
+    height:40px; 
+    border: 5px solid #333;
+    background: rgba(0,0,0,0);
+    border-radius: 10px;
+    z-index:5; 
+    position:absolute; 
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+    background-image: url(../../../images/thin-arrowheads-pointing-right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.dinamicSmallDotColuna{
+    cursor: grab;
+    border-radius: 20px;
+    cursor:pointer;
+    width:40px; 
+    height:40px; 
+    background: rgba(0,0,0,0);
+    border: 5px solid #333;
+    border-radius: 10px;
+    z-index:5; 
+    position:absolute; 
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+    background-image: url(../../../images/thin-arrowheads-pointing-down.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.staticCruzadaValue:hover{
+    background: rgb(51, 51, 255);
+}
+
+.staticCruzadaValue{
+    width: 50px;
+    height: 50px;
+    background: rgb(100,100,255);
+    position: absolute;
+    cursor: pointer;
+}
+
+.cruzadaDot{
+    border-radius: 10px;
+}
+
+.hideNullPointers .cruzadaDot .finalright,.hideNullPointers .cruzadaDot .finalbottom{
+    display: none;
+}
+
+.cruzadaDot .finalright{
+    opacity: 1;
+    width: 48px;
+    height: 30px;
+    display: inline-block;
+    font-family: principalFontThin;
+    font-size: 20px;
+    line-height: 75px;
+    right: -45px;
+    top:14px;
+    background-image: url(../../../images/ponteirofinalsmall4.png);
+    background-size: 48px 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    background-position: center top;
+    transition: background-size 0.5s ease-out,opacity 0.5s ease-out;     
+}
+
+.cruzadaDot .finalbottom{
+    opacity: 1;
+    width: 30px;
+    height: 40px;
+    display: inline-block;
+    font-family: principalFontThin;
+    font-size: 20px;
+    line-height: 75px;
+    left: 4px;
+    top:35px;
+    background-image: url(../../../images/ponteirofinalsmall3.png);
+    background-size: 30px 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    background-position: center top;
+    transition: background-size 0.5s ease-out,opacity 0.5s ease-out;     
+}
+
+.navbar {
+    width: 120px;
+}
+.navbar p{
+    margin-top: 10px;
+}
+#time{
+    margin-bottom: -10px;
+}

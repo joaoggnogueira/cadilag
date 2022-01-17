@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg5036"
+   width="133.33333"
+   height="66.666664"
+   viewBox="0 0 133.33333 66.666664"
+   sodipodi:docname="ponteiroinicial.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata5042">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5040" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview5038"
+     showgrid="false"
+     inkscape:zoom="2.7712501"
+     inkscape:cx="49.578563"
+     inkscape:cy="35.364975"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4" />
+  <g
+     transform="matrix(0.07852484,0,0,0.07852484,46.593473,-0.07704884)"
+     id="g4">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 139.31415,737.43508 101.358,109.635 c 1.905,1.903 4.189,2.853 6.856,2.853 2.478,0 4.665,-0.95 6.567,-2.853 l 99.927,-109.636 c 2.475,-3.049 2.952,-6.377 1.431,-9.994 -1.524,-3.616 -4.283,-5.424 -8.28,-5.424 h -63.954 v -356.315 c 0,-2.663 -0.855,-4.853 -2.57,-6.564 -1.713,-1.707 -3.899,-2.562 -6.567,-2.562 h -54.816 c -2.669,0 -4.859,0.855 -6.563,2.562 -1.711,1.712 -2.573,3.901 -2.573,6.564 v 356.315 h -63.954 c -3.806,0 -6.563,1.809 -8.274,5.424 -1.53,3.621 -1.052,6.949 1.412,9.995 z"
+       id="path2" />
+  </g>
+</svg>

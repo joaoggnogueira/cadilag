@@ -1,0 +1,88 @@
+/* 
+    Created on : 11/04/2018, 15:11:50
+    Author     : Acer
+*/
+
+
+.content{
+    left: 10px;
+    display: block;
+    position: absolute;
+    width: calc(100% - 20px);
+}
+.arquivosarea > .title {
+    background-image: none;
+    height: auto;
+}
+.arquivosarea{
+    width: calc(100% - 20px);
+}
+.arquivosarea > .arquivos > .arquivo{
+    height: auto;
+}
+.arquivosarea > .arquivos > .arquivo > * {
+    float: none;
+    width: calc(100% - 10px);
+    padding-left: 10px;
+    text-align: left;
+}
+
+.arquivosarea > .arquivos > .arquivo > .descricao::before{
+    content: " Nome: ";
+    font-weight: bold;
+}
+.arquivosarea > .arquivos > .arquivo > .data::before{
+    content: " Data de Upload: ";
+    font-weight: bold;
+}
+.arquivosarea > .arquivos > .arquivo > .hora::before{
+    content: " Hora de Upload: ";
+    font-weight: bold;
+}
+
+.arquivosarea > .arquivos > .arquivo > .nome{
+    display: none;
+}
+.arquivosarea > .arquivos > .arquivo > .size::before{
+    content: " Tamanho do Arquivo: ";
+    font-weight: bold;
+}
+.arquivosarea > .arquivos > .arquivo > .atividade > a::after{
+    content: " para a Atividade ";
+}
+.arquivosarea > .arquivos > .arquivo > .atividade{
+    height: 50px;
+    margin: 10px;
+    
+}
+
+.arquivosarea > .columnnames {
+    display: none;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

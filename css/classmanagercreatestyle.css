@@ -1,0 +1,61 @@
+/* 
+    Created on : 08/08/2016, 14:49:15
+    Author     : joaog
+*/
+
+.topbar > button{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.content{
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    top: 75px;
+    left: 25px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.content form{
+    margin: 0px;
+}
+
+.content .label{
+    margin: 5px;
+    width: 100%;
+    margin-top: 10px; 
+    position: relative;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+.content input,.content select{
+    width: 100%;
+}
+
+.content .subtitle{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.content .title{
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+}
+
+.content button{
+    width: 45%;
+    margin: 2%;
+    margin-top: 20px;
+}

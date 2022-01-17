@@ -1,0 +1,79 @@
+/* 
+    Created on : 18/04/2018, 11:24:29
+    Author     : Acer
+*/
+
+#icon{
+    display: none;
+}
+
+.topbar .resposives_buttons button.action{
+    background: #385875;
+    border-bottom: 5px solid #7b9fc0;
+    color: white;
+    margin-left: 2px;
+    margin-right: 7px;
+}
+.topbar .resposives_buttons button{
+    width: 50px;
+    height: 50px;
+    color: #333;
+    background: white;
+    border: none;
+    top:0px;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #666;
+    font-size: 30px;
+}
+
+.content{
+   left: 0px;
+   top: 60px;
+}
+.area{
+    min-width: inherit;
+    width: calc(100% - 20px);
+    border-radius: 0px;
+}
+
+#form textArea{
+    min-width: inherit;
+    height: 200px;
+}
+
+#form > p > button[type=submit]{
+    margin-top: 0px;
+}
+
+/** TOPBAR **/
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.topbar .resposives_buttons{
+    display: block;
+}

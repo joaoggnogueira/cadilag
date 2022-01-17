@@ -1,0 +1,1050 @@
+/* 
+    Created on : 07/02/2016, 02:08:50
+    Author     : joaog
+*/
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected{
+    background-color: #4267b2 !important;
+}
+
+.topbar{
+    z-index: 1003;
+}
+.aboutHeader{
+    font-size: 16px;
+}
+
+.topbar .subtitle h1{
+    font-size: 16px;
+    color: rgb(77, 74, 145);
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+a:focus{
+    box-shadow: 0px 0px 5px white;
+    border: 2px solid white;
+    text-decoration: underline;
+}
+
+#huboptions {
+    z-index: 1002;
+}
+
+.sub-topbar{
+    top: 0px;
+    z-index: 1004;
+    background: none;
+    box-shadow: none;
+    left: 200px;
+    width: 400px;
+}
+
+.topbar button{
+    float: left;
+    margin-left: 5px;
+}
+
+.topbar button{
+    position: relative;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
+}
+
+.topbar button:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+}
+
+.topbar #gotohub{
+    float: right;
+}
+
+.topbar label{
+    color: #222;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.topbar select{
+    color:black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 7px;
+    position: absolute;
+}
+
+.sidebar{
+    width: 250px;
+    top:50px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    left: 0px;
+    min-height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    border-bottom-right-radius: 10px;
+}
+
+.newactivy-img::after{
+    background-image: url(../images/new-activity.png);
+}
+
+.new-users::after{
+    background-image: url(../images/new_users.png);
+}
+
+.users::after{
+    background-image: url(../images/multiple-users-silhouette.svg);
+}
+
+.material::after{
+    background-image: url(../images/books-stack-of-three.svg);
+    background-size: 40px 40px !important;
+}
+
+.notepad::after{
+    background-image: url(../images/notepad.svg);
+    background-size: 40px 40px !important;
+}
+
+#statusP{
+    cursor: pointer;
+}
+
+.buttonW::after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    content: "";
+    transition: opacity 0.1s ease-out;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 5px center;
+}
+
+.buttonW:hover::after{
+    opacity: 1;
+}
+
+.buttonW{
+    display: inline-block;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    top: 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background:  rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.sidebar .buttonW{
+    width: calc(100% - 20px);
+}
+
+.sidecontent button{
+    width: 260px;
+    margin-top: 10px;
+    position: relative;
+    height: 35px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background:  rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: all linear 0.1s;
+}
+
+.sidebar button{
+    width: 230px;
+    margin-top: 10px;
+    position: relative;
+    height: 35px;
+    top: 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background-color:  rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: all linear 0.1s;
+}
+
+.sidecontent button:active{
+    top: 2px;
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);        
+}
+
+.sidecontent button:hover{
+    top: 1px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);         
+}
+
+.sidebar button:active{
+    top: 12px;
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+.sidebar button:hover{
+    top: 11px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+}
+
+label{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+}
+
+.infos > p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.sidebar .info{
+    padding: 10px;
+}
+
+.titleclass{
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    margin-left: 10px;
+    width: 230px;
+    margin-top: 10px;
+}
+
+.titleclass summary{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    width: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+    cursor: pointer;
+}
+
+.titleclass[open=''] summary{
+    display: inline-block;
+}
+
+.titleclass summary:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.titleclass summary:active{
+    font-weight: bold;
+}
+
+.titleclass summary:active{
+    font-weight: bold;
+}
+
+.titleclass label{
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.infos{
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    width: 210px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out,padding-top 0.5s ease-out,padding-bottom 0.5s ease-out;
+}
+.infos p{
+    margin-left: 10px;
+}
+
+.sidebar .infos.open{
+    padding-top: 10px;
+    max-height: 500px;
+    box-shadow: none;
+}
+
+.solicitacaoDetail{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.4);    
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 10px;
+}
+
+.solicitacaoDetail .title{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.solicitacaoDetail .details{
+    position: relative;
+    margin-left: 20px;
+}
+
+.details p{
+    margin-top: 0px;
+}
+
+.solicitacaoDetail button{
+    width: 260px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.dicas{
+    position: absolute;
+    left: 380px;
+    width: 200px;
+    top: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar > .title{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sidebar > .title > p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.notify{
+    position: relative;
+    margin-left: -10px;
+}
+
+.notify .log{
+    right: 10px;
+    position: absolute;
+    background: red;
+    color: white;
+    font-weight: bold;
+    float: right;
+    text-align: right;
+    padding: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.log p{
+    margin: 0px;
+}
+a:hover{
+    text-decoration: underline;   
+}
+
+a:visited{
+    color: white;
+}
+a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.content{
+    left: 260px;
+    top: 60px;
+    width: calc(100% - 580px);
+    transition: margin-left 0.4s ease-out;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    color: white;
+    position: absolute;
+}
+
+.content > .aboutHeader{
+    height: 40px;
+    background: white;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+.content > .aboutHeader > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.content > .aboutHeader > ul > li{
+    color: black;
+    float: left;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.content > .aboutHeader > ul > li:hover{
+    font-family: 'Raleway', sans-serif; font-weight: 800;
+}
+
+.content > .aboutHeader > ul > li.selected{
+    background: #eee;
+    font-family: 'Raleway', sans-serif; font-weight: 800;
+}
+
+
+.content > .status,.content > .ensino,.content > .calendario{
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    font-size: 16px;    
+    text-align: center; 
+    position: relative;
+    padding: 10px;
+    z-index: 1;
+    padding-bottom: 20px;
+    border-radius: 10px;  
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.content > .calendario{
+    text-align: left;
+}
+
+.content > .calendario .title{
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    position: absolute;
+}
+
+.content > .calendario ul{
+    margin-top: 40px;
+}
+ 
+.content > .calendario ul .descricao{
+    margin-left: 20px;
+}
+
+.content > .calendario ul .remove{
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   background-image: url(../images/delete.png);
+   background-position: center center;
+   background-size: 15px 15px;
+   background-repeat: no-repeat;
+   position: absolute;
+   opacity: 0.5;
+}
+
+.content > .calendario ul .remove:hover{
+    opacity: 1;
+}
+
+.content > .calendario table tr td{
+    padding: 5px;
+}
+
+.content > .calendario button{
+    top: 0px;
+}
+.content > .calendario button:hover{
+    top: 1px;
+}
+
+.content > .calendario #submitCalendario{
+    width: 100%;
+    border-top: 2px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
+}
+
+#order{
+    margin-bottom: -40px;
+    float:right;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+}
+
+#openatv:hover #order,#closeatv:hover #order{
+    opacity: 1;
+}
+
+select{
+    color: black;
+    font-family: sans-serif;
+}
+
+.content > .status > .title{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: -15px;
+    text-align: left;
+} 
+
+.content > .atividades{
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    font-size: 16px;    
+    position: relative;
+    padding: 10px;
+    border-radius: 10px; 
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.content > .atividades #order-label{
+    z-index: 1;
+}
+.content > .atividades #order:hover + #order-label{
+    display: none;
+}
+
+.content > .atividades > .title{
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    font-size: 30px;
+    padding-left: 100px;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgba(255,255,255,0.4);  
+}
+.content > .atividades > .atividade{
+
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    background-image: url(../images/nav4.png);
+
+    background-size: 30px 30px;
+    background-position: 0% 5px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.content > .atividades > .atividade > .infos{
+    position: relative;
+    font-family: sans-serif;
+    width: 100%;
+    background: rgba(0,0,0,0.2);
+    margin-top: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 0px;
+    transition: max-height 0.25s linear;
+    overflow: hidden;
+}
+
+.content > .atividades > .atividade > .infos > .details > form{
+    width: 230px;
+    float: left;
+}
+
+.content > .atividades > .atividade > .infos > p{
+    margin-top: 10px;
+}
+
+.content > .atividades > .atividade[open=open]{
+    background-image: url(../images/minus.png);
+    border-bottom: none;
+}
+
+.content > .atividades > .atividade[open=open] > .infos{
+    max-height: 220px;
+}
+
+.content > .atividades > .atividade > .title{
+    float: left;
+    margin-left: 30px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+.content > .atividades > .atividade > .title > p{
+    line-height: 40px;
+}
+
+.content > .atividades > .atividade > .data{
+    float: right;
+    margin-right: 10px;
+
+    line-height: 40px;
+    height: 40px;    
+}
+
+.content > .atividades > .atividade > .arquivos{
+    color: white;
+    font-size: 13px;
+    float: right;   
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 30px;
+    padding-left: 50px;
+    background-image: url(../images/files.png);
+    background-position: 0% 50%;
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.content > .atividades > .atividade > .arquivos > p
+{
+    font-size: 16px;
+    margin: 0px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.content > .atividades > .atividade > .data > p{ 
+    line-height: 40px;
+    margin:0px;
+}
+
+.sidecontent{
+    transition: margin-left 0.4s ease-out;
+    right: 10px;
+    top: 70px;
+    width: 300px;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    color: white;
+    position: absolute;   
+}
+
+.sidecontent > .links,.sidecontent > .alunos,.sidecontent > .materiais{
+    padding: 10px;
+    position: relative;
+    background: rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidecontent > .materiais > .title{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    text-align: center;
+    background-clip: padding-box;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    background-image: url(../images/books.svg);
+    background-size: 80px 80px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 10px;  
+}
+
+.sidecontent > .materiais > .material{
+    text-decoration: none;
+    color:white;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.sidecontent > .materiais > .material > p{
+    line-height: 40px;
+    margin: 0px;
+}
+.sidecontent > .materiais > .material:hover{
+    text-decoration: underline;   
+    background: rgba(255,255,255,0.4);
+}
+
+.sidecontent > .alunos > .title{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    text-align: center;
+    background-clip: padding-box;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    background-image: url(../images/users.png);
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 10px;  
+}
+
+.sidecontent > .links > .title{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    background-clip: padding-box;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    background-image: url(../images/link.png);
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.sidecontent > .links > a > .link{
+    overflow: hidden;
+    margin-top: 5px;
+    line-height: 40px;
+    text-decoration: none;
+    color:white;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}
+
+.sidecontent > .links > a > .link:hover{
+    background: rgba(255,255,255,0.4);
+}
+
+.sidecontent > .links > a:visited{
+    color: white;
+}
+
+.sidecontent > .links > a:hover{
+    text-decoration: underline;
+}
+
+.sidecontent > .links > a > .link > p{
+    line-height: 40px;
+    margin: 0px;
+}
+
+.sidecontent > .links > .buttonedit,.sidecontent > .materiais > .buttonedit,.sidecontent > .alunos > .buttonedit{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/edit.png);
+    background-size: 20px 20px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.sidecontent > .links > .buttonedit:hover,.sidecontent > .materiais > .buttonedit:hover,.sidecontent > .alunos > .buttonedit:hover{
+    opacity: 1   
+}
+
+
+.sidecontent > .alunos >  .userimage{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 6px;
+    float: left;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+.sidecontent > .alunos{
+    position: absolute;
+    width: 280px;
+}
+.atividade button{
+    float: left;
+    margin-left: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    background-color:  rgba(255,255,255,0.1);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 140px;
+    color: white;
+    border: none;
+    text-align: left;
+    padding-left: 60px;
+    transition: box-shadow 0.1s linear;
+}
+
+.atividade button:hover{
+    background-color:  rgba(255,255,255,0.2);  
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+
+.atividade .details p{
+    margin-top: 50px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.atividade .details{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image:
+        linear-gradient(
+        rgba(255,255,255,0.2) ,rgba(255,255,255,0.05) 10%
+        );
+}
+
+.showatv{
+    margin-left: 10px;
+    background-image: url(../images/open.ico);
+    background-size: 50px 50px;
+    background-position: 5px 25%;
+}
+
+.editatv{
+    margin-bottom: 0px;
+    background-image: url(../images/editbig.png);
+    background-size: 55px 55px;
+    background-position: 5px 50%;
+}
+
+.deleteatv{
+    margin-bottom: 0px;
+    background-image: url(../images/delete.png);
+    background-size: 55px 55px;
+    background-position: 5px 50%;
+}
+
+.topicosarea p{
+    line-height: 20px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.topicosarea
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    background: rgba(0,0,0,0.4);
+    box-shadow:0px 0px 5px rgba(0,0,0, 0.4);
+    position: relative;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.topicosarea > .title{
+    font-size: 25px;
+    height: 30px;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    border-bottom: 4px solid rgba(255,255,255,0.4);
+}
+
+.topicosarea .title p{
+    line-height: 25px;
+}
+
+.topicos{
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255,255,255,0.4);  
+}
+
+.topicos > .topico{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+.topicos > .topico:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+.topicos > .topico > .title{
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    float: left;
+}
+
+.topicos > .topico > .time{
+    color: white;
+    font-size: 13px;
+    float: right;   
+    text-align: right;
+}
+
+.topicos > .topico > .comment{
+    color: white;
+    font-size: 13px;
+    float: right;   
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 30px;
+    padding-left: 35px;
+    background-image: url(../images/comments.png);
+    background-position: -10px 50%;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+.topicos > .topico > .comment > p{
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.topicos > .topico > .time > p{
+    margin: 0px;
+    margin-right: 10px;
+    line-height: 40px;
+}
+.topicos > .topico > .title > p{
+    margin: 0px;
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+.topicosarea > .pageselect{
+    margin-bottom: 10px;
+}
+
+.topicosarea > .pageselect > button:disabled{
+    opacity: 0.4;
+}
+
+.topicosarea > .pageselect > button[atual=atual]{
+    background: rgba(255,0,0,0.6);
+}
+
+.topicos > a > .more{
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+.locked{
+    background-image: url(../images/lockedwhite.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    float: right;
+}
+
+#cancel{
+    cursor: default;
+}
+
+.link a{
+    text-decoration: none;
+    color:white;
+}
+
+.link a:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+.link a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.link{
+    color: white;
+    height: 45px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 10px;
+    text-decoration: none !important;
+}
+
+.link .title{
+    width: 260px;
+    float:left;
+    text-align: left;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.link .foot{
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+    position: absolute;
+    padding-left: 30px;
+}
+
+.link .icon{
+    position: relative;
+    left: 0px;
+    float: left;
+}
+
+
+.link > a > .title > p{
+    line-height: 20px;
+    text-decoration: none;
+    margin: 0px;
+    margin-top: 8px !important;
+}
+.link > a > .title > p:hover{
+    text-decoration: underline;
+}
+.topbar .resposives_buttons{
+    display: none;
+}
+
+.labelAboutHeader{
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    color: black;
+    line-height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+.atividade .details p {
+    padding-top: 20px;
+}

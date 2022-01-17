@@ -1,0 +1,26 @@
+/* 
+    Created on : 09/04/2018, 18:41:28
+    Author     : Acer
+*/
+
+body .area{
+    left: calc(100%/2 - 9.75em);
+    top: 65px;
+}
+
+.slider{
+    top: 65px;
+    left: calc(100%/2 - 9.75em);;
+    display: none
+}
+
+#socialLogin{
+    top: 450px;
+    padding-bottom: 50px;
+}
+
+.topbar .title{
+    position: absolute;
+    left: calc(100%/2 - 5.5em);
+    margin-top: 0em;
+}

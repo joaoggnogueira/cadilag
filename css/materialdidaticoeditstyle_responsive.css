@@ -1,0 +1,43 @@
+/* 
+    Created on : 23/02/2016, 19:28:46
+    Author     : joaog
+*/
+
+.topbar .title{
+    display: none;
+}
+
+.content{
+    left: 0px;
+}
+
+.area > .lista{
+    margin-left: 0px;
+    width: calc(100% - 20px);
+}
+
+.area > .novo{
+    width: calc(100% - 20px);
+}
+
+.materiadetails{
+    top: 140px;
+    left: 0px;
+    width: calc(100% - 20px);
+}
+
+body.reponsive-menu-2 > .content > .area{
+    display: none;
+}
+
+.columnndata{
+    width: 90px;
+}
+
+.columnnhora{
+   width: 50px;
+}
+
+.columnntitulo{
+    width: 165px;
+}

@@ -1,0 +1,214 @@
+/* 
+    Created on : 18/04/2018, 13:55:46
+    Author     : Acer
+*/
+
+
+
+.hide-responsive-menu .topbar .resposive_button{
+    display: none;
+}
+
+/*Menu 1*/
+.responsive-menu-0 .sidebar{
+    width: 100%;
+}
+
+.responsive-menu-0 .content,.responsive-menu-0 .sidecontent{
+    display: none;
+}
+
+/*Menu 2*/
+
+.responsive-menu-1 .content{
+    width: 100%;
+    left: 0px;
+}
+
+.responsive-menu-1 .sidebar,.responsive-menu-1 .sidecontent{
+    display: none;
+}
+
+/*Menu 3*/
+
+.responsive-menu-2 .sidecontent{
+    width: 100%;
+    left: 0px;
+}
+
+.responsive-menu-2 .sidebar,.responsive-menu-2 .content{
+    display: none;
+}
+
+.atividade .details p {
+    padding-top: 120px;
+}
+
+.solicitacaoDetail{
+    left: 25px;
+    top: 120px;
+}
+
+.topbar.sub-topbar{
+    width: auto;
+    top: 50px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    left: 0px;
+    width: 100%;
+    z-index: 1001;
+}
+
+.topbar .subtitleb{
+    color: black;
+    margin-top: 0px;
+}
+
+.dicas{
+    left: 25px;
+    top: 550px;
+}
+
+.sidebar{
+    top:100px;
+}
+
+.content{
+    top: 100px;
+}
+
+.sidecontent{
+    top: 125px;
+}
+
+.buttonW.new-users{
+    width: calc(100% - 30px);
+}
+/** Outros **/
+
+.sidebar button{
+    width: calc(100% - 20px);
+}
+
+.titleclass{
+    width: calc(100% - 20px);
+    margin-top: 30px;
+}
+
+.titleclass summary{
+    width: 100%;
+    margin-top: 0px;
+}
+
+/** RESPONSIVE BUTTONS **/
+
+.atividade button {
+    width: calc(100% - 20px);
+    margin: 5px;
+}
+
+.content > .atividades > .atividade[open=open] > .infos {
+    padding-bottom: 50px;
+}
+
+#options_ensino .pure-button{
+    width: calc(100% - 50px);
+    margin: 2px;
+}
+.topbar.sub-topbar > form > select{
+    width: calc(100% - 80px);
+    position: absolute;
+    left: 5px;
+    float: none;
+}
+
+.topbar.sub-topbar > button{
+    width: 50px;
+    position: absolute;
+    float: none;
+    right: 10px;
+    font-size: 0px;
+}
+.topbar.sub-topbar > button > i{
+    font-size: 30px;
+}
+
+
+.topbar:not(.sub-topbar) > button,.topbar:not(.sub-topbar) > form{
+    display: none;
+}
+
+.sidecontent > .alunos {
+    width: calc(100% - 20px);
+}
+
+.topbar .resposives_buttons{
+    display: block;
+    width: calc(100% - 50px);
+    position: absolute;
+    left: 5px;
+    top: 0px;
+    height: 50px;
+    text-align: center;
+}
+
+.topbar .resposives_buttons button{
+    display: inline-block;
+}
+
+.topbar .resposives_buttons button.action{
+    background: #385875;
+    border-bottom: 5px solid #7b9fc0;
+    color: white;
+    margin-left: 2px;
+    margin-right: 7px;
+}
+.topbar .resposives_buttons button{
+    width: 50px;
+    height: 50px;
+    color: #333;
+    background: white;
+    border: none;
+    top:0px;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #666;
+    font-size: 30px;
+}
+
+.topbar .resposives_buttons button.selected{
+    background: linear-gradient(#DDD, white);
+}
+
+.topbar #icon{
+    display: none;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

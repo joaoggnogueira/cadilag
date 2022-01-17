@@ -1,0 +1,48 @@
+/* 
+    Created on : 23/01/2017, 14:17:34
+    Author     : joaog
+*/
+
+#content{
+    text-align: center;
+    left: 320px;
+    position: absolute;
+    top: 70px;
+}
+
+#content table{
+    background: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#content form{
+    color:white;
+}
+
+#content form select{
+    color: black;
+}
+
+#content table tr:nth-child(odd){
+    background: rgba(0,0,0,0.1);
+}
+
+#content table th,#content table td{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#loadingbar{
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+}

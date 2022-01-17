@@ -1,0 +1,176 @@
+/* 
+    Created on : 20/02/2016, 13:28:09
+    Author     : joaog
+*/
+
+.topbar label{
+    font-size: 16px;
+    color: black;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.topbar select{
+    margin-top: 7px;
+    margin-left: 5px;
+    float: left;
+    color:black;
+}
+
+.topbar button{
+    float: left;
+    margin-left: 5px;
+    margin-top: -3px;
+}
+
+.area{
+    top: 100px;
+    left: 100px;
+    position: absolute;
+}
+
+.area > .aluno{
+    cursor: pointer;    
+    width: 290px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4); 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button{
+    width: 230px;
+    position: relative;
+    height: 35px;
+    top: 10px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    background:  rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.5);
+
+}
+
+button:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+button:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    top: 11px;
+}
+
+.area > *{
+    margin-bottom: 10px;    
+}
+
+.area > #title{
+    color: white;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.area > .infos{
+    position: fixed;
+    left: 400px;
+    top:120px;
+    width: 250px;
+    background: rgba(0,0,0,0.4);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.area > .infos > .title{
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    color: white;
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    font-size: 30px;
+    line-height: 30px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.area > .aluno > img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.area > .aluno > .title{
+    float: left;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.area > .aluno > .more{
+    background-image:  url('../images/next.png');
+    background-size: 50px 50px;  
+    width: 50px;
+    height: 50px;
+    float: right;
+
+    opacity: 0.5;
+}
+
+.area > .aluno > .more.selected{
+    background-image: url('../images/prev.png');   
+
+}
+
+.area > .aluno > .more:hover,.area > .aluno:hover > .more{  
+    opacity: 1;
+}
+
+.area > .aluno:hover > img{
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+} 
+
+.infos label{
+    font-size: 18px;
+    width: 100%;
+    display: block;
+}
+
+.infos i{
+    margin-bottom: 5px;
+    width: 100%;
+    display: block;
+}
+
+.remove{
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.unbind{
+    background-image: url('../images/grid.png'); 
+    border-top: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.5);
+    background-color: rgba(255,255,255,0.1);
+    height: 50px;
+    line-height: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: box-shadow 0.05s linear;
+}
+
+.unbind:hover{
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+.sweet-alert button{
+    height: 50px !important;
+}

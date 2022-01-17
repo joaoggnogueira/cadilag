@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="564mm"
+   height="564mm"
+   viewBox="0 0 1998.4252 1998.4252"
+   id="svg4140"
+   version="1.1"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="play_blue.svg">
+  <defs
+     id="defs4142" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="1164.2524"
+     inkscape:cy="1007.9132"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-paths="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,946.06299)">
+    <path
+       style="fill:#599cf3;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.28987145px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 465.10573,-776.97925 c 126.98839,68.34627 1196.77987,640.43549 1298.29137,696.432731 101.5116,55.99726 150.866,211.089099 7.5973,292.359189 C 1627.7256,293.08278 680.19497,802.19542 502.248,897.94544 324.30102,993.69546 211.14283,883.28818 209.3305,799.56413 c -1.81233,-83.72397 2.99351,-1411.48865 2.90693,-1479.2263 -0.0866,-67.73762 125.8799,-165.66335 252.8683,-97.31708 z"
+       id="path4699"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="zzzzzzz" />
+    <ellipse
+       style="fill:#ff0000;fill-opacity:0;stroke:none;stroke-opacity:1"
+       id="path4703"
+       cx="31.25"
+       cy="70.576492"
+       rx="15.892858"
+       ry="8.5714283" />
+  </g>
+</svg>

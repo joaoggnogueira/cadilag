@@ -1,0 +1,47 @@
+<?PHP 
+code::init();
+code::initFunction("Insere(INFO)");
+
+code::l("anterior,leitor,novo : EstruturaLista;", "Declarando cursores e novo elemento");
+code::l("leitor := Lista;", "Inicializando o cursor no primeiro elemento");
+code::l("novo := alocar();", "Alocando novo elemento");
+code::l("novo.info := INFO;", "Atribuindo o valor ao novo elemento");
+code::l("novo.anteiror := nulo;","Definindo anterior como nulo");
+code::l("novo.proximo := nulo;","Definindo próximo como nulo");
+code::l();
+code::l("Enquanto leitor != nulo e leitor.info < INFO faça", "Percorrendo elementos da lista para buscar a posição correta");
+code::begin();
+    code::l("anterior := leitor;", "Cursor 'anterior' aponta para o atual elemento da leitura");
+    code::l("leitor := leitor.proximo;", "Cursor 'leitor' aponta para o próximo elemento da leitura");
+code::end();
+code::l();
+code::l("Se leitor != nulo então", "Inserindo numa posição diferente da última");
+code::begin();
+    code::l("Se anterior != nulo então", "Inserindo na primeira posição");
+    code::begin();
+        code::l("Lista.anterior := novo;", false);
+        code::l("novo.proximo := Lista;", false);
+        code::l("Lista := novo;", "Novo primeiro elemento da lista");
+    code::end();
+    code::l("Senão", "Inserindo em posição intermediária");
+    code::begin();
+        code::l("novo.proximo := leitor;", false);
+        code::l("novo.anterior := anterior;", false);
+        code::l("anterior.proximo := novo;", false);
+        code::l("leitor.anterior := novo;", false);
+    code::end();
+code::end();
+code::l("Senão", "Inserindo na última posição");
+code::begin();
+    code::l("Se anterior == nulo então", "Inserindo o primeiro elemento");
+    code::begin();
+        code::l("Lista := novo;", "Novo primeiro elemento da lista");
+    code::end();
+    code::l("Senão", "Inserindo na última posição");
+    code::begin();
+        code::l("novo.anterior := anterior;", false);
+        code::l("anterior.proximo := novo;", false);
+    code::end();
+code::end();
+
+code::write();

@@ -1,0 +1,387 @@
+/* 
+    Created on : 23/01/2016, 23:58:43
+    Author     : joaog
+*/
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected{
+    background-color: #4267b2 !important;
+}
+
+body{
+    background-color: #EEE;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#changeBg{
+    width: 20px;
+    height: 40px;
+    background-image: url(../images/mountain-range-on-black-background.svg);
+    background-position: center center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:0px;
+    left:0px;
+}
+
+#password{
+    width: calc(100% - 4em);
+    float: left;
+    z-index: 2;
+}
+
+#viewpassword{
+    background-image: url('../images/view.svg');
+    background-size: 1.5em 1.5em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 2.3em;
+    width: 2.3em;
+    float:right;
+    margin-left: 0px;
+    background-color: #4267b2;
+    border:none;
+    border: 1px outset #1480dd;
+}
+
+#viewpassword.selected{
+    border: 1px inset #1480dd;
+}
+
+#viewpassword:hover{
+    background-color: #7c97ce;
+}
+
+#viewpassword:active{
+    background-color: #a9bbdf;
+}
+
+.topbar{
+    font-family: 'Raleway', sans-serif; font-weight: 200;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    z-index: -1;
+}
+
+#alertCaps{
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+    text-align: center;
+    border-radius: 0.25em;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgb(255,255,255);
+}
+
+.topbar .title{
+    position: relative;
+    color: rgb(80,80,80);
+    background-image: url(../images/fulllogo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    width: 100px;
+    height: 50px;
+    left: calc(50% - 50px);
+    top: 0px;
+    
+}
+
+.confirmup .area{
+    top: 80px;
+}
+
+.confirmup .labelcount{
+    margin-top: -90px;
+    font-size: 30px;
+    background: white;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.area > .title{
+    color: #444;
+    line-height:  1em;
+    height: 1.5em;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    text-align: center;
+}
+
+#email{
+    background-image: url(../images/close-envelope.svg);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+#password{
+    background-image: url(../images/key.svg);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.area{
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    width: 19.5em;
+    top: 110px;
+    left: calc(100%/2 - 9.75em);
+    position: absolute;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #CCC;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.slider{
+    position: absolute;
+    width: 300px;
+    top: 110px;
+    left: calc(100%/2 - 9.75em);
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.0);
+}
+
+.sliderselect{
+    cursor: pointer;
+    position: relative;  
+    text-align: center;
+    color: white;
+    width: calc(100%/3.0);
+    float: left;
+    background: #999;
+}
+
+.sliderselect.selected{
+    font-weight: bold;
+    background: #4267b2 !important;
+}
+
+.slider-content-visible{
+    width: 300px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-content{
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.about{
+    position: absolute;
+    background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.0));
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 16px;
+    height: 290px;
+    width: 280px;
+}
+
+.about .about-content{
+    font-weight: bold;
+    color: #333;
+}
+
+.slidefooter{
+    position: relative;
+    bottom: 0px;
+}
+
+.area > form > *{
+    position: relative;
+    width: calc(100% - 1em);
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.area > form > input,.area > form > button,.area > form > .logupdiv{
+    margin-bottom: 0.5em;
+}
+
+form > .title{
+    background: #4267b2;
+    color: white;
+    width: 100%;
+    height: 20px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 0px;
+    font-size: 1em;
+}
+
+.progress{
+    width: 100%;
+    height: 2em;
+    background: #f5f5f5;
+    box-shadow: inset 0 0.05em 0.1em #ddd;
+    border-radius: 0.25em;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.progress .float{
+    height: 100%;
+    width: 0%;
+
+    position: relative;
+}
+
+.info{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.25px;
+    height: 1em;
+    text-align: center;
+    color:#333;
+    font-weight: bold;
+    transition: all linear 0.5s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.info:hover{
+    background: rgba(0,0,255,0.2);
+}
+
+.label{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    position: relative;
+    margin-left: 0.5em;
+}
+.progress-label{
+    font-size: 1em;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    width: 100%;
+    height: 1.5em;
+    background: #f5f5f5;
+    box-shadow: inset 0 0.05em 0.1em #ddd;
+    border-radius: 0.25em;
+    line-height: 1.5em;
+    z-index: 1000;
+}
+
+#socialLogin{
+    position: absolute;
+    width: 15em;
+    top: 500px;
+    left: calc(100%/2 - 15em/2);
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-group.social{
+    padding: 5px;
+    font-family: FontAwesome;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: calc(100% - 10px);
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #bbb;
+    display: inline-block;
+}
+
+.btn-group.social:hover{
+    text-decoration: underline;
+}
+
+.btn-group.social:active{
+    text-decoration: underline;
+}
+
+.btn-group.social > .btn-text{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    font-weight: bold;
+}
+
+.btn-group.social > .btn-text > .fa{
+    font-size:30px;
+}
+
+.btn-group.social.google > .btn-text{
+    color:#E00002;
+}
+
+#toogle-responsive-info{
+    top: 0.6em;
+    left: calc(100%/2 + 7em);
+    position: absolute;
+    display: none;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+body.show-responsive-info .area {
+    left: calc(100%/2 - 9.75em);
+    top: 65px;
+    display: none;
+}
+
+#toogle-responsive-info{
+    display: block;
+}
+
+body.show-responsive-info .slider{
+    display: block;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid blue;
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px #FFF inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+#action{
+    margin-top: 0.5em;
+}

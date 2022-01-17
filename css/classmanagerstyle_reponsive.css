@@ -1,0 +1,27 @@
+/* 
+    Created on : 24/06/2018, 18:44:45
+    Author     : Acer
+*/
+
+.area{
+    left: 0px;
+}
+
+.descriptionbar{
+    left: 0px;
+}
+
+.buttonarea{
+    left: 0px;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.scroll-area{
+    width: 100%;
+    overflow-x: auto;
+    height: 100%;
+    position: absolute;
+}

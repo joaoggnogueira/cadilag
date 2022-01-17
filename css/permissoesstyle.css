@@ -1,0 +1,112 @@
+/* 
+    Created on : 21/02/2016, 22:17:34
+    Author     : joaog
+*/
+
+.sidebar{
+    left:0px;
+    top:50px;
+    float: left;
+    position: absolute;
+    
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4); 
+    color: white;
+    font-family: principalFont;
+}
+
+.sidebar > .title{
+    background: white;
+    margin-top: 30px;
+    background: rgba(0,0,0,0.1);
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-family: principalFontNormal;
+    height: 100px;
+
+}
+
+.sidebar > #back{
+    width: 250px;
+    position: fixed;
+    font-family: principalFontNormal;
+    z-index: 1;
+}
+
+.sidebar > #back{
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar > #back:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+.sidebar > #back:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    margin-top: 1px;
+}
+
+.sidebar > .title > p{
+    line-height: 100px;
+}
+
+.sidebar > .ed{
+    width: 100%;
+    border: none;
+    z-index: 0;
+    cursor: pointer;
+    background: rgba(0,0,0,0.4);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 25px 25px;
+
+}
+
+.sidebar > .ed:hover{
+    background-image: url('../images/navbarhover.png');
+}
+.sidebar > .ed.selected{
+    background-image: url('../images/navbarselected.png');    
+}
+.sidebar > .ed > p{
+    margin: 0px;
+}
+
+.area{
+    top: 60px;
+    left: 280px;
+    position: fixed;
+    width: 300px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.area > .label{
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.area > p{
+    margin-left: 15px;
+}
+
+.area > .title{
+    width: 300px;
+    font-size: 25px;
+    font-family: principalFont;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+    color: white;
+}

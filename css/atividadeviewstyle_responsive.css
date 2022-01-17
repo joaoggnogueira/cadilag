@@ -1,0 +1,52 @@
+
+.topbar .subtitle{
+    display: none;
+}
+
+.content{
+    overflow: auto;
+    width: 100%;
+    left: 0px;
+}
+
+.content > .atividadearea{
+    width: calc(100% - 20px);
+    padding-bottom: 60px;
+}
+
+.content > .atividadearea > .description{
+    width: calc(100% - 40px);
+    margin-right: 0px;
+}
+
+.content > .atividadearea > .info{
+    left: 0px;
+    position: relative;
+    width: calc(100% - 20px);
+}
+
+.content > .arquivoarea{
+    width: calc(100% - 20px);
+    left: 0px;
+}
+
+.content > .arquivodetail{
+    float: left;  
+    left: 0px;
+}
+
+.arquivo > .descricao,.columnnames > .descricao{
+    width: 60%;
+    overflow: hidden;
+}
+.arquivo > .data,.columnnames > .data{
+    width: 17.5%;
+    overflow: hidden;
+}
+.arquivo > .hora,.columnnames > .hora{
+    width: 17.5%;
+    overflow: hidden;
+}
+.atividadearea button{
+    width: calc(100%);
+}

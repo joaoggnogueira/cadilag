@@ -1,0 +1,461 @@
+/* 
+    Created on : 04/05/2017, 22:01:20
+    Author     : joaog
+*/
+
+.code {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    font-size: 1em;
+    position: relative;
+    font-weight: bold;
+}
+.code .TabCode p:not(.delimiterUp):not(.delimiterDown),
+.code .TabCode .inputcode.indentado {
+    padding-left: 15px;
+}
+.code .TabCode .inputcode.handlerTab.indentado {
+    padding-left: 30px;
+}
+
+.code p.big_one {
+    height: 40px !important;
+}
+
+.code p.big_two {
+    height: 60px !important;
+}
+
+.code p.big_three {
+    height: 80px !important;
+}
+
+.code p.big_one::after {
+    height: 40px !important;
+    margin-top: -20px !important;
+    line-height: 40px !important;
+}
+
+.code p.big_two::after {
+    height: 60px !important;
+    margin-top: -40px !important;
+    line-height: 60px !important;
+}
+
+.code p.big_three::after {
+    height: 80px !important;
+    margin-top: -65px !important;
+    line-height: 80px !important;
+}
+.code p.big_one::before {
+    height: 40px !important;
+}
+
+.code p.big_two::before {
+    height: 60px !important;
+}
+
+.code p.big_three::before {
+    height: 80px !important;
+}
+.code p::after {
+    content: attr(counter);
+    min-height: 20px;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    left: -40px;
+    text-align: right;
+    width: 20px;
+    padding: 2px 5px;
+}
+#AlgoritmoDiv.counterInvisible .code p::after {
+    content: attr(counterI);
+    min-height: 20px;
+    line-height: 20px;
+    color: white;
+    position: absolute;
+    left: -40px;
+    text-align: right;
+    width: 20px;
+    padding: 2px 5px;
+}
+.code p::before {
+    z-index: -1;
+    content: "";
+    width: calc(100% + 20px);
+    position: absolute;
+    height: 20px;
+    left: -10px;
+}
+.code p.even::after {
+    background: #666;
+}
+.code p:hover::before {
+    background: rgba(0, 0, 0, 0.05);
+}
+.code p.even:hover::before {
+    background: rgba(0, 0, 0, 0.05);
+}
+.code p.even::before {
+    background: rgba(0, 0, 0, 0.02);
+}
+.code p.odd::after {
+    background: #999;
+}
+.code p {
+    max-width: 400px;
+    line-height: 20px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+
+    -khtml-user-select: none;
+    /* Konqueror */
+
+    -moz-user-select: none;
+    /* Firefox */
+
+    -ms-user-select: none;
+    /* IE/Edge */
+
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-indent: 5px;
+    cursor: default;
+    white-space: normal;
+    z-index: 2;
+}
+.code p:hover {
+    transition: all 200ms linear;
+    color: #4183F4;
+}
+.code p.current_line::before {
+    border-radius: 2px;
+    -webkit-animation: blink 2s infinite alternate;
+    animation: blinkk1 2s infinite alternate;
+    -moz-animation: blinkmoz1 2s infinite alternate;
+    -o-animation: blinko1 2s infinite alternate;
+    -ms-animation: blinkms1 2s infinite alternate;
+}
+.code p::after{
+    z-index: 100;
+}
+.code p.current_line::after {
+    margin-top: -2px;
+    background: #0048e7;
+    color: white !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 5px rgb(0,0,0);
+    z-index: 101;
+}
+.code p.second_line::before {
+    border-radius: 2px;
+    color: #242121;
+    -webkit-animation: blink2 2s infinite alternate;
+    animation: blinkk2 2s infinite alternate;
+    -moz-animation: blinkmoz2 2s infinite alternate;
+    -o-animation: blinko2 2s infinite alternate;
+    -ms-animation: blinkms2 2s infinite alternate;
+}
+.code p.second_line::after {
+    margin-top: -2px;
+    background: red;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 5px rgb(0,0,0);
+    z-index: 101;
+}
+.code p.call_line::before {
+    border-radius: 2px;
+    color: #242121;
+    -webkit-animation: blink4 2s infinite alternate;
+    animation: blinkk4 2s infinite alternate;
+    -moz-animation: blinkmoz4 2s infinite alternate;
+    -o-animation: blinko4 2s infinite alternate;
+    -ms-animation: blinkms4 2s infinite alternate;
+}
+.code p.call_line::after {
+    margin-top: -2px;
+    background: greenyellow;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 5px rgb(0,0,0);
+    z-index: 101;
+}
+
+@keyframes blinkLabel {
+    from {
+        color: #000;
+    }
+    to {
+        color: #DDD;
+    }
+}
+
+@keyframes blinkAdd {
+    from {
+        background-color: rgb(100,205,100);
+        box-shadow: 0 0 5px rgb(100,205,100);
+    }
+    to {
+        background-color: rgb(68, 227, 68);
+        box-shadow: 0 0 10px rgb(68, 227, 68);
+    }
+}
+@keyframes blinkRem {
+    from {
+        background-color: rgb(255,50,50);
+        box-shadow: 0 0 5px rgb(255,50,50);
+    }
+    to {
+        background-color: rgb(255, 10, 10);
+        box-shadow: 0 0 10px rgb(255, 10, 10);
+    }
+}
+@keyframes blinkSearch {
+    from {
+        background-color: #4183C4;
+        box-shadow: 0 0 5px #4183C4;
+    }
+    to {
+        background-color: #4183C4;
+        box-shadow: 0 0 10px #4183C4;
+    }
+}
+@keyframes blinkOthers {
+    from {
+        background-color: #FFCC00;
+        box-shadow: 0 0 5px #ffdd56;
+    }
+    to {
+        background-color: #FFCC00;
+        box-shadow: 0 0 5px #ffdd56;
+    }
+}
+
+
+
+@-webkit-keyframes blink {
+    from {
+        background-color: #89F0FF;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+}
+
+@-moz-keyframes blinkmoz1 {
+    from {
+        background-color: #89F0FF;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+}
+
+
+@keyframes blinkk1 {
+    from {
+        background: #89F0FF;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+    to {
+        background: white;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+}
+
+
+@-o-keyframes blinko1 {
+    from {
+        background-color: #89F0FF;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+}
+
+@-ms-keyframes blinkms1 {
+    from {
+        background-color: #89F0FF;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px #89F0FF;
+    }
+}
+@-webkit-keyframes blink2 {
+    from {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px red;
+    }
+}
+
+@-moz-keyframes blinkmoz2 {
+    from {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px red;
+    }
+}
+
+
+@keyframes blinkk2 {
+    from {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px red;
+    }
+}
+
+
+@-o-keyframes blinko2 {
+    from {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px red;
+    }
+}
+
+@-ms-keyframes blinkms2 {
+    from {
+        background-color: red;
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px red;
+    }
+}
+
+
+
+@-webkit-keyframes blink3 {
+    from {
+        background-color: #999999;
+    }
+    to {
+        background-color: #999999;
+    }
+}
+
+@-moz-keyframes blinkmoz3 {
+    from {
+        background-color: #999999;
+    }
+    to {
+        background-color: #999999;
+    }
+}
+
+
+@keyframes blinkk3 {
+    from {
+        background-color: #999999;
+    }
+    to {
+        background-color: #999999;
+    }
+}
+
+
+@-o-keyframes blinko3 {
+    from {
+        background-color: #999999;
+    }
+    to {
+        background-color: #999999;
+    }
+}
+
+@-ms-keyframes blinkms3 {
+    from {
+        background-color: #999999;
+    }
+    to {
+        background-color: #999999;
+    }
+}
+
+@-webkit-keyframes blink4 {
+    from {
+        background-color: greenyellow;
+        box-shadow: 0 0 10px greenyellow;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px greenyellow;
+    }
+}
+
+@-moz-keyframes blinkmoz4 {
+    from {
+        background-color: greenyellow;
+        box-shadow: 0 0 10px greenyellow;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px greenyellow;
+    }
+}
+
+
+@keyframes blinkk4 {
+    from {
+        background-color: greenyellow;
+        box-shadow: 0 0 10px greenyellow;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px greenyellow;
+    }
+}
+
+
+@-o-keyframes blinko4 {
+    from {
+        background-color: greenyellow;
+        box-shadow: 0 0 10px greenyellow;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px greenyellow;
+    }
+}
+
+@-ms-keyframes blinkms4 {
+    from {
+        background-color: greenyellow;
+        box-shadow: 0 0 10px greenyellow;
+    }
+    to {
+        background-color: white;
+        box-shadow: 0 0 10px greenyellow;
+    }
+}

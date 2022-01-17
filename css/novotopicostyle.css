@@ -1,0 +1,67 @@
+/* 
+    Created on : 06/02/2016, 12:40:45
+    Author     : joaog
+*/
+
+body{
+    min-height: 700px;
+}
+
+form{
+    position: relative;
+    width: 540px;
+}
+
+form [type=text]{
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+}
+
+form textarea{
+    width: calc(100% - 40px);
+    height: 265px;
+    resize: none;
+}
+
+form label{
+    color: white;
+    margin-bottom: 0px;
+}
+
+form button{
+    float: left;
+    margin: 10px;
+    width: 230px;
+}
+
+.area{
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    background: rgba(0,0,0,0.3);
+    left: 50px;
+    top: 75px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    position: absolute;
+    transition: margin-left 0.4s ease-out;
+}
+
+.warning{
+    transition: margin-left 0.4s ease-out;
+    position: absolute;
+    color: white;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    font-size: 18px;
+    top: 100px;
+    left: 600px;
+}
+
+#particular-div{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+hr{
+    display: none;
+}

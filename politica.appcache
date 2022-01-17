@@ -1,0 +1,5 @@
+CACHE MANIFEST
+login.php
+
+FALLBACK:
+*.php includes/offline.html

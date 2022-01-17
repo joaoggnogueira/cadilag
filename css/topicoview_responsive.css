@@ -1,0 +1,99 @@
+/* 
+    Created on : 10/04/2018, 22:52:16
+    Author     : Acer
+*/
+
+.area{
+    left: 0px;
+    width: calc(100%);
+}
+
+.area > .topico,.area > .respostasarea{
+    padding: 15px;
+    width: calc(100% - 30px);
+}
+
+.area > .topico > .description {
+    width: 100%;
+}
+
+.area > .topico > .description > .title{
+    font-size: 25px;
+}
+
+.area > .topico > .text {
+    width:100%;
+    margin-top: 0px;
+}
+
+.area > .topico > .text img{
+    max-width: 100%;
+}
+
+.area > .respostasarea > .repostas > .resposta > .info {
+    width: calc(100% - 130px);
+}
+
+.area > .respostasarea > .repostas > .resposta > .text {
+    top: 180px;
+    margin-bottom: 160px;
+    margin-left: 10px;
+    border-top: 5px solid rgba(255,255,255,0.5);
+}
+
+.area > .respostasarea > .repostas > .resposta > .data {
+    top: 20px;
+    word-break: normal;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+}
+
+.area > .respostasarea > .repostas > .resposta {
+    padding-bottom: 50px;
+}
+
+.area > .respostasarea > .repostas > .resposta > .vote {
+    height: 170px;
+}
+.area > .respostasarea > .repostas > .resposta >.info > .userlabel {
+    width: 100%;
+}
+.cooltagbutton button:first-child {
+    margin-left: 0px !important;
+}
+
+/*Topbar*/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+}
+
+.area > .topico .userinfo{
+    width: calc(100% - 20px);
+    float: none;
+
+}

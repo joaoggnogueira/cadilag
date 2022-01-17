@@ -1,0 +1,841 @@
+/* 
+    Created on : 22/07/2016, 01:42:51
+    Author     : joaog
+*/
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: myFontThin;
+  src: url(../fonts/Roboto-Thin.ttf); }
+@font-face {
+  font-family: myFontBold;
+  src: url(../fonts/Roboto-BoldCondensed.ttf); }
+@font-face {
+  font-family: myFontCondensed;
+  src: url(../fonts/Roboto-Condensed.ttf); }
+@font-face {
+  font-family: myFontCondensedBold;
+  src: url(../fonts/Roboto-BoldCondensed.ttf); }
+@font-face {
+  font-family: myFontCubic;
+  src: url("../fonts/trench100free.ttf"); }
+.switch {
+  height: 15px;
+  padding: 3px;
+  width: 40px;
+  margin-bottom: 5px;
+  position: relative;
+  transition: border-color 0.2s ease-out;
+  cursor: pointer; }
+  .switch > .ball {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transition: background 0.2s ease-out,left 0.2s ease-out;
+    left: 0px; }
+
+.switch.checked > .ball {
+  left: 25px; }
+
+@keyframes blinkshadow {
+  10% {
+    margin-left: -20px; }
+  20% {
+    margin-left: 0px; }
+  23% {
+    filter: brightness(1000%); }
+  40% {
+    margin-left: -60px; }
+  50% {
+    margin-left: -40px; }
+  80% {
+    margin-left: -30px; } }
+@keyframes blink {
+  2% {
+    filter: none;
+    text-shadow: none; }
+  5% {
+    filter: brightness(200%);
+    text-shadow: 0px 0px 2px white; }
+  8% {
+    filter: none;
+    text-shadow: none; }
+  20% {
+    width: 130px; }
+  42% {
+    filter: none;
+    text-shadow: none; }
+  45% {
+    width: 150px;
+    filter: brightness(400%);
+    text-shadow: 0px 0px 2px white; }
+  48% {
+    filter: none;
+    text-shadow: none; }
+  50% {
+    width: 160px;
+    filter: none;
+    text-shadow: none; }
+  53% {
+    width: 150px;
+    filter: brightness(200%);
+    text-shadow: 0px 0px 5px white; }
+  56% {
+    width: 155px;
+    filter: none;
+    text-shadow: none; }
+  60% {
+    width: 150px; }
+  70% {
+    filter: none;
+    text-shadow: none; }
+  73% {
+    filter: brightness(200%);
+    text-shadow: 0px 0px 2px white; }
+  76% {
+    filter: none;
+    text-shadow: none; }
+  80% {
+    width: 160px; } }
+.jsplumb-connector {
+  z-index: 47; }
+
+.jsplumb-endpoint {
+  z-index: 52; }
+
+.jsplumb-overlay {
+  z-index: 48; }
+
+p {
+  margin: 0px; }
+
+.title, label, .subtitle, #adddialog *, .element, .value, .cell, .counter, span {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  cursor: default; }
+
+.value {
+  font-family: myFontThin; }
+
+label {
+  font-family: sans-serif; }
+
+.withGrid {
+  height: 100%;
+  background-size: 25px 25px;
+  background-color: transparent; }
+
+#topbar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
+  left: 0px; }
+  #topbar > button#navbar {
+    height: 50px;
+    width: 50px;
+    background-size: 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    border: none; }
+  #topbar > .title {
+    width: calc(100% - 250px);
+    font-family: myFontCondensed;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    margin: 5px;
+    margin-left: 50px;
+    float: left; }
+  #topbar > .subtitle::first-letter {
+    font-weight: 900;
+    font-size: 40px; }
+  #topbar > .subtitle {
+    width: 150px;
+    text-align: left;
+    float: right;
+    font-family: myFontCubic;
+    font-size: 25px;
+    line-height: 50px;
+    z-index: 102; }
+    #topbar > .subtitle > .shadow {
+      filter: blur(2px);
+      width: 100%;
+      height: 100%;
+      font-family: myFontCubic;
+      font-size: 40px;
+      line-height: 40px;
+      position: absolute;
+      top: -10px;
+      float: left;
+      display: none;
+      z-index: 101; }
+    #topbar > .subtitle > .shadow::first-letter {
+      font-weight: 900;
+      font-size: 50px; }
+  #topbar > .subtitle:hover {
+    animation: blink 5s infinite alternate; }
+    #topbar > .subtitle:hover > .shadow {
+      animation: blinkshadow 5s infinite alternate;
+      display: block; }
+
+#sidebar.hide {
+  right: -200px; }
+
+#sidebar {
+  transition: right 0.5s ease-out;
+  top: 50px;
+  width: 200px;
+  height: calc(100% - 50px);
+  right: 0px;
+  z-index: 99;
+  position: absolute; }
+  #sidebar > .title {
+    font-family: myFontThin;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px;
+    padding-left: 45px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px; }
+  #sidebar > .subsidebar.hide {
+    display: none; }
+  #sidebar > .subsidebar {
+    width: 180px;
+    position: relative;
+    padding: 10px;
+    max-height: 100%; }
+    #sidebar > .subsidebar > .title {
+      font-family: myFontThin;
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 5px;
+      position: relative; }
+    #sidebar > .subsidebar > #componentes {
+      position: relative; }
+      #sidebar > .subsidebar > #componentes > button {
+        border-radius: 10px;
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 180px;
+        height: 40px;
+        background-position: 0px center;
+        background-repeat: no-repeat;
+        background-size: 60px 60px;
+        font-family: myFontBold; }
+    #sidebar > .subsidebar > form {
+      margin-bottom: 10px; }
+      #sidebar > .subsidebar > form > .subtitle {
+        font-family: myFont;
+        font-size: 12px;
+        text-align: right; }
+    #sidebar > .subsidebar label {
+      font-size: 15px;
+      font-family: myFontBold;
+      width: 180px; }
+    #sidebar > .subsidebar #editendpointsbtn, #sidebar > .subsidebar #removebtn, #sidebar > .subsidebar #addlabelbtn {
+      width: 180px;
+      font-family: myFont;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      height: 40px;
+      padding-left: 40px;
+      background-position: 0px center;
+      background-size: 50px 50px;
+      background-repeat: no-repeat; }
+    #sidebar > .subsidebar #setEmptyInput {
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      right: 5px; }
+    #sidebar > .subsidebar #inputcomponent {
+      width: 140px; }
+    #sidebar > .subsidebar #positionlabel {
+      width: 180px; }
+
+#editorendpoint {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  bottom: 10px;
+  right: 210px;
+  z-index: 2000; }
+  #editorendpoint > .title {
+    width: 260px;
+    position: absolute;
+    font-family: myFontThin;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    float: left; }
+  #editorendpoint > .closebtn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    float: right; }
+  #editorendpoint .editorarea {
+    position: absolute;
+    top: 40px;
+    height: 160px;
+    width: 300px; }
+    #editorendpoint .editorarea .label {
+      float: left;
+      width: 80px;
+      margin: 10px;
+      height: 15px;
+      line-height: 15px;
+      text-align: center;
+      font-size: 15px;
+      font-family: myFontCondensedBold; }
+    #editorendpoint .editorarea .nodeexample {
+      overflow: hidden;
+      border-radius: 25px;
+      position: absolute;
+      width: 150px;
+      height: 80px;
+      left: 75px;
+      top: 55px; }
+      #editorendpoint .editorarea .nodeexample > .nodeendpoint {
+        width: 40px;
+        height: 40px;
+        position: absolute; }
+      #editorendpoint .editorarea .nodeexample > .left {
+        top: 20px;
+        left: -20px; }
+      #editorendpoint .editorarea .nodeexample > .right {
+        top: 20px;
+        right: -20px; }
+      #editorendpoint .editorarea .nodeexample > .top {
+        left: 55px;
+        top: -20px; }
+      #editorendpoint .editorarea .nodeexample > .bottom {
+        left: 55px;
+        bottom: -20px; }
+
+#statushud.hide {
+  max-height: 27px; }
+
+#statushud {
+  overflow: hidden;
+  z-index: 2000;
+  top: 60px;
+  left: 10px;
+  max-height: auto;
+  position: fixed;
+  transition: max-height 0.2s linear; }
+  #statushud > .labelcounter {
+    height: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 30px; }
+    #statushud > .labelcounter > .counter {
+      height: 30px;
+      min-width: 30px;
+      width: 30px;
+      text-align: center;
+      position: relative;
+      float: left; }
+    #statushud > .labelcounter > .title {
+      width: 90px;
+      height: 30px;
+      font-family: myFont;
+      font-size: 15px;
+      position: relative;
+      float: left;
+      margin-left: 5px; }
+
+#taghud {
+  z-index: 2000;
+  bottom: 10px;
+  position: fixed;
+  left: 10px; }
+  #taghud > p {
+    position: relative;
+    height: 32px;
+    margin-bottom: 5px; }
+    #taghud > p > span {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      float: left;
+      line-height: 20px; }
+    #taghud > p > button {
+      overflow: hidden;
+      float: left;
+      padding-right: 32px;
+      height: 32px;
+      width: 0px;
+      transition: color 0.2s ease-out,width 0.2s ease-out; }
+    #taghud > p > button:hover {
+      width: 100px; }
+    #taghud > p > input {
+      height: 20px;
+      float: left; }
+    #taghud > p > #nameproject {
+      width: 150px; }
+    #taghud > p > #nameuser {
+      width: 250px; }
+
+#workspace {
+  z-index: 48;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-image 1s ease-out; }
+  #workspace .lplumb {
+    line-height: 30px;
+    border-radius: 5px;
+    height: 30px; }
+    #workspace .lplumb > .listread {
+      float: left;
+      position: relative;
+      text-align: center;
+      height: 30px; }
+      #workspace .lplumb > .listread > .cell {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        margin-left: -15px; }
+      #workspace .lplumb > .listread > .cell:first-child {
+        margin-left: 0px; }
+  #workspace > #readdialog.hide {
+    display: none; }
+  #workspace > #readdialog {
+    display: block;
+    width: 0px;
+    height: 0px;
+    padding: 5px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 53; }
+    #workspace > #readdialog > .closedialog {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      right: 10px;
+      top: 0px;
+      font-family: myFont;
+      line-height: 20px;
+      font-size: 15px; }
+    #workspace > #readdialog > #setEmptyRead {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      right: 10px;
+      bottom: 0px;
+      font-family: myFont;
+      line-height: 20px;
+      font-size: 15px; }
+    #workspace > #readdialog input {
+      margin-top: 20px;
+      width: 100px;
+      height: 30px;
+      text-align: center; }
+  #workspace > #adddialog {
+    width: 0px;
+    height: 0px;
+    padding: 5px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 53; }
+    #workspace > #adddialog > .closedialog {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      right: 10px;
+      top: 0px;
+      font-family: myFont;
+      line-height: 20px;
+      font-size: 15px; }
+    #workspace > #adddialog > .title {
+      font-family: myFontCondensed;
+      width: 100px;
+      position: relative;
+      text-align: left; }
+    #workspace > #adddialog > button {
+      width: 50px;
+      height: 50px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 50px 50px; }
+  #workspace > #adddialog.hide {
+    display: none; }
+  #workspace > .element {
+    font-family: myFontCondensed;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    z-index: 49;
+    width: 0px;
+    /*97px*/
+    height: 0px;
+    /*47px*/ }
+    #workspace > .element .labelcomponent {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      font-family: myFontThin;
+      padding: 5px; }
+      #workspace > .element .labelcomponent > textarea {
+        position: relative;
+        height: 30px;
+        width: 50px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        line-height: 20px;
+        margin-bottom: -10px;
+        resize: both; }
+    #workspace > .element .warning {
+      display: none;
+      height: 30px;
+      right: -140px;
+      top: 7px;
+      position: absolute; }
+      #workspace > .element .warning > .info {
+        font-family: myFontCondensed;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 30px;
+        position: relative; }
+      #workspace > .element .warning > .coner {
+        width: 22px;
+        height: 22px;
+        top: 1.75px;
+        -ms-transform: rotate(45deg);
+        /* IE 9 */
+        -webkit-transform: rotate(45deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+        position: absolute;
+        left: -12px; }
+  #workspace > .element.error .warning {
+    display: block; }
+  #workspace > .element.selected {
+    z-index: 49; }
+    #workspace > .element.selected > .componentoptions {
+      display: block; }
+  #workspace > .escritaelement > input {
+    width: 15px;
+    text-align: center;
+    border: none;
+    transition: margin-left 0.2s ease-out;
+    cursor: pointer; }
+    #workspace > .escritaelement > input :focus {
+      margin-left: 2.5px;
+      cursor: text; }
+
+/* 
+    Created on : 22/07/2016, 00:01:10
+    Author     : joaog
+*/
+.withGrid {
+  background-image: url(../images/grid.png); }
+
+.switch {
+  border: 3px solid #0078e7;
+  border-radius: 20px;
+  background: none; }
+  .switch > .ball {
+    border-radius: 20px;
+    background: #0078e7; }
+
+.switch:hover, .switch.checked:hover {
+  border-color: #51a3ee; }
+  .switch:hover > .ball, .switch.checked:hover > .ball {
+    background: #51a3ee; }
+
+.switch.checked {
+  border-color: #a1a1a1; }
+  .switch.checked > .ball {
+    background: #a1a1a1; }
+
+#topbar {
+  background: rgba(0, 120, 231, 0.9);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
+  #topbar > .subtitle {
+    color: white; }
+    #topbar > .subtitle > .shadow {
+      color: white; }
+  #topbar > button#navbar:active {
+    background-color: #6478e7 !important; }
+  #topbar > button#navbar:hover {
+    background-color: #0078e7; }
+  #topbar > button#navbar {
+    background-color: #42a4ff;
+    background-image: url("../images/home.svg"); }
+  #topbar > .title {
+    color: white; }
+
+#sidebar.hide > #listtab > .hidetab > .title {
+  transform: rotate(180deg); }
+
+#sidebar {
+  background: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
+  #sidebar > .subsidebar > .title {
+    color: #616161; }
+  #sidebar > .subsidebar > form {
+    border-top: 1px solid #bce4f9; }
+    #sidebar > .subsidebar > form > .subtitle {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+  #sidebar > .subsidebar > #componentes > button {
+    border-right: 5px;
+    background-color: #42a4ff;
+    border: none;
+    color: white; }
+  #sidebar > .subsidebar > #componentes > button:disabled {
+    background-color: #616161;
+    transition: background 0.4s ease-out; }
+  #sidebar > .subsidebar > #componentes > button:hover:disabled {
+    background-color: #616161; }
+  #sidebar > .subsidebar > #componentes > button:focus {
+    border: 2px solid #818181; }
+  #sidebar > .subsidebar > #componentes > button:hover {
+    background-color: #0078e7; }
+  #sidebar > .subsidebar #editendpointsbtn, #sidebar > .subsidebar #removebtn, #sidebar > .subsidebar #addlabelbtn {
+    border-radius: 5px;
+    border: none;
+    color: white; }
+  #sidebar > .subsidebar #editendpointsbtn:focus, #sidebar > .subsidebar #removebtn:focus, #sidebar > .subsidebar #addlabelbtn:focus {
+    border: 2px solid #818181; }
+  #sidebar > .subsidebar #editendpointsbtn {
+    background-color: #0078e7;
+    background-image: url("../images/endpoints.svg"); }
+  #sidebar > .subsidebar #editendpointsbtn:hover {
+    background-color: #42a4ff !important; }
+  #sidebar > .subsidebar #editendpointsbtn:active {
+    background-color: #6eb7fa; }
+  #sidebar > .subsidebar #addlabelbtn {
+    background-color: #0078e7;
+    background-image: url("../images/tag.svg"); }
+  #sidebar > .subsidebar #addlabelbtn:active {
+    background-color: #6eb7fa !important; }
+  #sidebar > .subsidebar #addlabelbtn:hover {
+    background-color: #51a3ee; }
+  #sidebar > .subsidebar #removebtn {
+    background-color: #ff2d2d;
+    background-image: url("../images/delete.svg"); }
+  #sidebar > .subsidebar #removebtn:active {
+    background-color: #ff6a6a !important; }
+  #sidebar > .subsidebar #removebtn:hover {
+    background-color: #ff4646; }
+  #sidebar > .title {
+    color: #212121;
+    background-image: url("../images/settings.svg");
+    border-bottom: 1px solid #42a4ff; }
+
+button#leitura, button#addleitura {
+  background-image: url(../images/read.png); }
+
+button#partida, button#addpartida {
+  background-image: url(../images/partida.png); }
+
+button#aceita, button#addaceita {
+  background-image: url(../images/aceita.png); }
+
+button#rejeita, button#addrejeita {
+  background-image: url(../images/rejeita.png); }
+
+button#escrita, button#addescrita {
+  background-image: url(../images/write.png); }
+
+#editorendpoint:hover {
+  background: white; }
+
+#editorendpoint {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transition: background 0.2s linear; }
+  #editorendpoint > .title {
+    background: #499bea;
+    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #207ce5));
+    background: -webkit-linear-gradient(top, #499bea 0%, #207ce5 100%);
+    background: -o-linear-gradient(top, #499bea 0%, #207ce5 100%);
+    background: -ms-linear-gradient(top, #499bea 0%, #207ce5 100%);
+    background: linear-gradient(to bottom, #499bea 0%, #207ce5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );
+    color: white; }
+  #editorendpoint > .closebtn:hover {
+    height: 38px;
+    box-shadow: 0px 2px 0px #6eb7fa; }
+  #editorendpoint > .closebtn:active {
+    height: 40px;
+    box-shadow: 0px 0px 0px #6eb7fa; }
+  #editorendpoint > .closebtn {
+    background-image: url(../images/close.svg);
+    background-size: 10px 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 3px solid #51a3ee;
+    box-shadow: 0px 4px 0px #6eb7fa;
+    width: 40px;
+    height: 36px;
+    transition: height 0.2s ease-out,box-shadow 0.2s ease-out; }
+  #editorendpoint > .editorarea > #inputlabel {
+    color: #5cb85c; }
+  #editorendpoint > .editorarea > #outputlabel {
+    color: #ff2d2d; }
+  #editorendpoint > .editorarea > #nothinglabel {
+    color: #414141; }
+  #editorendpoint > .editorarea > .nodeexample {
+    border: 3px solid #0078e7;
+    background: white; }
+    #editorendpoint > .editorarea > .nodeexample > .nodeendpoint {
+      border-radius: 30px; }
+    #editorendpoint > .editorarea > .nodeexample > .nodeendpoint:hover {
+      box-shadow: inset 0px 0px 10px; }
+    #editorendpoint > .editorarea > .nodeexample > .nodeendpoint.nothing {
+      background: #414141; }
+    #editorendpoint > .editorarea > .nodeexample > .nodeendpoint.input {
+      background: #5cb85c; }
+    #editorendpoint > .editorarea > .nodeexample > .nodeendpoint.output {
+      background: #ff2d2d; }
+
+#taghud > p > button {
+  color: transparent;
+  border: none;
+  background-color: #0078e7;
+  border-radius: 5px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center right; }
+#taghud > p > button:hover {
+  color: white; }
+#taghud > p > #export {
+  background-image: url(../images/export.svg); }
+#taghud > p > #save {
+  background-image: url(../images/save.svg); }
+#taghud > p > span {
+  background: #51a3ee;
+  color: white; }
+#taghud > p > button:active {
+  background: #6eb7fa; }
+#taghud > p > input {
+  border: none;
+  color: #818181;
+  padding: 5px;
+  border: 1px solid #818181;
+  border-radius: 5px; }
+#taghud > p > input:focus {
+  border-color: #42a4ff;
+  color: #42a4ff; }
+
+#statushud > .labelcounter > .counter {
+  border-radius: 15px;
+  color: white;
+  background: #0078e7; }
+#statushud > .labelcounter > .title {
+  color: black;
+  width: 150px;
+  transition: width 0.5s ease-out;
+  overflow: hidden; }
+#statushud > .labelcounter:hover > .counter {
+  background: #0078e7; }
+
+#workspace > .lplumb {
+  background: rgba(0, 120, 231, 0.9);
+  color: white;
+  border-radius: 5px; }
+#workspace > .lplumb:hover {
+  background: rgba(0, 120, 231, 0.9); }
+#workspace > #readdialog {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid #0078e7;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+  #workspace > #readdialog > #setEmptyRead {
+    background: white;
+    color: #0078e7;
+    font-family: myFontCondensed;
+    border: 1px solid #0078e7;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  #workspace > #readdialog > .closedialog {
+    background: white;
+    color: #0078e7;
+    font-family: myFontCondensed;
+    border: 1px solid #0078e7;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  #workspace > #readdialog > #setEmptyRead:hover, #workspace > #readdialog .closedialog:hover {
+    background: #eef; }
+#workspace > #adddialog {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid #0078e7;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4); }
+  #workspace > #adddialog > button {
+    border: none;
+    background-color: #0078e7; }
+  #workspace > #adddialog > button:hover {
+    background-color: #42a4ff; }
+  #workspace > #adddialog > button:active {
+    background-color: #6eb7fa; }
+  #workspace > #adddialog > button:disabled {
+    transition: background 0.4s ease-out;
+    background-color: #616161; }
+  #workspace > #adddialog > .closedialog {
+    background: white;
+    color: #0078e7;
+    font-family: myFontCondensed;
+    border: 1px solid #0078e7;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  #workspace > #adddialog > .closedialog:hover {
+    background: #eef; }
+#workspace > .element {
+  transition: box-shadow 0.2s ease-out;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  border: 3px solid #0078e7;
+  background: white; }
+  #workspace > .element .warning {
+    background-color: white;
+    border: 3px solid #0078e7;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none; }
+    #workspace > .element .warning > .coner {
+      border: 3px solid #0078e7;
+      background: white;
+      border-right: none;
+      border-top: none; }
+  #workspace > .element .labelcomponent {
+    border: 2px #5cb85c solid;
+    background: white; }
+#workspace .element:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4); }
+#workspace > .element.selected {
+  border: 3px solid #0078e7; }
+#workspace > .partidaelement, #workspace > .rejeitaelement, #workspace > .aceitaelement, #workspace > .leituraelement {
+  border-radius: 20px; }
+#workspace > .escritaelement > input {
+  background: transparent; }
+#workspace > .escritaelement > input:focus {
+  border: 1px royalblue solid; }
+
+/*# sourceMappingURL=default.css.map */

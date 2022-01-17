@@ -1,0 +1,178 @@
+@font-face {
+    font-family: principalFont;
+    src: url(../fonts/Raleway-ExtraLight.ttf);
+}
+
+body{
+    text-align: center;
+    background-image: url('../images/background1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+label{
+    text-align: left;
+    position: relative;
+    color:white;
+    font-family: principalFont;
+}
+
+.formconfirm{
+    position: relative;
+    top: 50px;
+}
+
+.confirmlabel > p{
+    margin: 0px;
+}
+
+#code{
+    font-family: principalFont;
+    text-align: center;
+}
+
+.confirmlabel{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    background-image: url(../images/grid.png);
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    z-index: 0;
+    font-family: principalFont;
+    position: relative;
+    display: inline-block;
+    color:white;
+    top: 100px;
+}
+
+.overlayer{
+    z-index: 2;
+    background-image: url(../images/grid.png);
+    text-align: center;
+    top: -10px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: inset 0px -10px 25px rgba(255,255,255,0.2), 0px 10px 10px rgba(0,0,0,0.4);
+    border-bottom: 10px solid rgba(255,255,255,0.2);
+    -webkit-border-image: url(../images/bg1.png) 50 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/bg1.png) 50 round; /* Opera 11-12.1 */
+    border-image: url(../images/bg1.png) 50 round;
+}
+
+.details > .title{
+    font-size: 20px;
+    border-bottom: 5px solid rgba(255,255,255,0.5);
+    font-family: principalFont;
+    display: inline-block;
+    color:white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.confirm{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.details > p{
+    color: white;
+    text-align: left;
+    margin: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.details > .title > p{
+    margin: 0px;
+}
+
+.loading{
+    z-index: 0;
+    font-family: principalFont;
+    position: relative;
+    display: inline-block;
+    color:white;
+    top: 100px;
+    font-size: 50px;
+}
+
+.details{
+    position: relative;
+    padding: 10px;
+    display: inline-block;
+    width: 300px;
+    top: 70px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+.overlayer-bg{
+    z-index: 1;
+    background-image: url('../images/backgroundblur.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+
+form#submit{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    margin-top: 100px;
+}
+
+#fbind{
+    padding: 5px;
+    background: #66F;
+    color: white;
+    width: calc(100% - 30px);
+    cursor: pointer;
+}
+
+#fbind .fa,#gbind .fa{
+    padding: 10px;
+    border-right: 1px solid white;
+    width: 15px;
+    font-size: 18px;
+}
+
+#gbind{
+    padding: 5px;
+    background: #ff3333;
+    color: white;
+    width: calc(100% - 30px);
+    cursor: pointer;
+}
+
+.status-info{
+    width: 240px;
+    font-weight: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+}
+
+.status{
+    font-size: 14px;
+    width: 240px;
+    position: absolute;
+}
+
+.col-status{
+    position: absolute;
+    margin-left: 4px;
+}

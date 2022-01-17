@@ -1,0 +1,169 @@
+/* 
+    Created on : 05/02/2016, 20:56:59
+    Author     : joaog
+    Description :  Aqui está os estilos para várias páginas do AVA
+*/
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected{
+    background-color: #4267b2 !important;
+}
+
+.pure-button:focus{
+     box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+}
+
+.subtitle h1{
+    font-size: 16px;
+    color: rgb(77, 74, 145);
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+}
+
+body{
+    background-color: #55a1e7;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .1) 25%, 
+                    rgba(255, 255, 255, .2) 26%, 
+                    transparent 27%, transparent 74%, 
+                    rgba(255, 255, 255, .2) 75%, 
+                    rgba(255, 255, 255, .2) 76%, 
+                    transparent 77%, transparent), 
+                    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .1) 25%
+                    , rgba(255, 255, 255, .2) 26%, transparent 27%, transparent 74%, 
+                    rgba(255, 255, 255, .2) 75%, rgba(255, 255, 255, .1) 76%, 
+                    transparent 77%, transparent);
+    height:100%;
+    background-size:50px 50px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.topbar{
+    background: rgb(255,255,255);
+    left: 0px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    height: 50px;
+    
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.6);
+    transition: margin-left 0.4s ease-out;
+    color: white;
+}
+
+.topbar .title{
+    position: relative;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    color: black;
+}
+
+.topbar .subtitle{
+    color: #444;
+    height: 30px;    
+    position: relative;
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
+    margin-top: 5px;
+    float: left; 
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 500;
+}
+
+#gotohub{
+    display: inline-block;
+    color: white;
+    float:right;
+    padding-right: 5px;
+    padding-left: 25px;
+    margin-right: 5px;
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+#gotohub > img{
+    width: 55px;
+    height: 55px;
+    transition: all linear 0.2s;
+    box-shadow:0px 0px 10px #111;  
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(../images/cadilag.svg);
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+    background-position: 0px 50%;
+}
+
+#gotohub:hover > img{
+    width: 60px;
+    height: 60px;    
+}
+#gotohub:hover{
+    background-color: rgba(255,255,255,0.4);
+}
+
+#gotohub > p{
+    margin: 0px;
+    line-height: 50px;
+    float: left;
+    color: #444;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+#huboptions{
+    width: 200px;
+    right: 0px;
+    top: 50px;
+    color: white;
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 200;
+    position: fixed;
+    margin-right: 10px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.7);   
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.option{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background: white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    color: #444 !important;
+    font-weight: 500;
+    border-top: 1px solid #AAA;   
+    text-decoration: none !important;
+}
+
+.option:hover{
+    text-decoration: underline !important;;
+    border: none;
+    border-top: 1px solid #AAA;   
+}
+
+.topbar .resposives_buttons{
+    display: none;
+}

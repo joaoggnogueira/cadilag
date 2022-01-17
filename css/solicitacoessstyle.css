@@ -1,0 +1,143 @@
+
+
+.topbar label{
+    font-size: 16px;
+    color: black;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+.topbar button{
+    position: relative;
+    height: 35px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.topbar button:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+.topbar button:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    margin-top: 8px;
+}
+.topbar select{
+    margin-top: 7px;
+    margin-left: 5px;
+    float: left;
+    color:black;
+}
+
+.topbar button{
+    margin-top: 7px;
+    float: left;
+    margin-left: 5px;
+}
+
+.area{
+    position: absolute;
+    top: 75px;
+    left: 100px;
+}
+
+.solicitacao{
+    width: 500px;
+    height: 75px;
+    color: white;
+    font-family: sans-serif;
+    background: rgba(0,0,0,0.4);
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.5);
+    position: relative;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.solicitacao > img{
+    float:left;
+    width: 75px;
+    height: 75px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;    
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);    
+    position: relative;
+}
+
+.solicitacao > .title{
+    float: left;
+    width: 360px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+
+.solicitacao > .title{
+    height: 40px;
+    line-height: 40px;
+}
+
+.solicitacao button{
+    float: left;
+}
+
+.solicitacao button.pure-button{
+    width: 212.5px;
+    border-radius: 0px;
+}
+
+.area > .title{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.solicitacaousuario{
+    min-width: 250px;
+    min-height: 200px;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    border-radius: 10px;
+    top: 120px;
+    left: 625px;
+    box-shadow:0px 0px 10px rgba(0,0,0, 0.4);
+    color: white;
+    padding: 10px;
+}
+
+.solicitacaousuario p{
+    margin-top: 0px;
+}
+
+.solicitacao:hover img{
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+}
+
+.area > button{
+    width: 230px;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.area > button:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+.area > button:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    top: 11px;
+}
+
+.topbar .resposives_buttons{
+    display: none;
+}

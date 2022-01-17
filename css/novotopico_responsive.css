@@ -1,0 +1,63 @@
+/* 
+    Created on : 13/04/2018, 15:13:51
+    Author     : Acer
+*/
+
+form{
+    width: 100%;
+}
+
+form input[type=text]{
+    margin: 0px;
+    width: 100%;
+}
+
+form textarea{
+    margin: 0px;
+    width: 100%;
+}
+
+.area{
+    left: 0px;
+    width: calc(100% - 40px);
+}
+
+.area button{
+    width: 40%;
+}
+
+.warning{
+    left: 10px;
+    top: 700px;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+.topbar .title{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+    display: none;
+}
+
+.area > .topico .userinfo{
+    width: calc(100% - 20px);
+    float: none;
+}

@@ -1,0 +1,51 @@
+/* 
+    Created on : 10/06/2018, 12:13:53
+    Author     : Acer
+*/
+
+
+.node .finalright{
+    opacity: 1;
+    width: 48px;
+    height: 30px;
+    display: inline-block;
+    font-family: principalFontThin;
+    font-size: 20px;
+    line-height: 75px;
+    right: -44px;
+    top:14px;
+    background-image: url(../../../images/ponteirofinalsmall4.png);
+    background-size: 48px 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    background-position: center top;
+    transition: background-size 0.5s ease-out,opacity 0.5s ease-out;     
+}
+
+.node .finalbottom{
+    opacity: 1;
+    height: 40px;
+    display: inline-block;
+    font-family: principalFontThin;
+    font-size: 20px;
+    line-height: 75px;
+    top:35px;
+    background-image: url(../../../images/ponteirofinalsmall3.png);
+    background-size: 30px 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    text-align: center;
+    background-position: center top;
+    transition: background-size 0.5s ease-out,opacity 0.5s ease-out;     
+    width: 100%;
+    left: 0px;
+}
+
+.patriciaHover{
+    position: absolute;
+    border: 5px solid black;
+    background: transparent;
+    height: 40px;
+    border-radius: 15px;
+}

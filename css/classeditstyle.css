@@ -1,0 +1,214 @@
+/* 
+    Created on : 23/02/2016, 13:40:33
+    Author     : joaog
+*/
+
+.content{
+    left: 10px;
+    top: 60px;
+    position: absolute;
+}
+
+.content > .linkedit{
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    border:5px solid transparent;
+    width: 450px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    min-width: 400px;
+    margin-left: 20px;
+    overflow: auto;
+    float: left;
+}
+
+.content >.linkedit > form {
+    width: 47.5%;
+    padding-right: 2.5%;
+    float: left;
+    border-right: 5px solid rgba(255,255,255,0.4);
+}
+
+.content >.linkedit > .links{
+    width: 47.5%;
+    float: right;   
+    text-decoration: none;
+}
+
+.content >.linkedit > .links > .title{
+    color: white;
+    text-align: center;
+}
+
+.content >.linkedit > .links  a{
+    text-decoration: none;
+    color:white;
+}
+
+.content >.linkedit > .links  a:hover{
+    text-decoration: underline;
+    color:white;
+}
+
+.content >.linkedit > .links  a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.content >.linkedit > .links   .link{
+    color: white;
+    height: 45px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 10px;
+    text-decoration: none !important;
+}
+
+.content >.linkedit > .links  .link .title{
+    width: 100%;
+    height: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.content >.linkedit > .links  .link .foot{
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+}
+
+.content >.linkedit > .links  .link .icon{
+    position: relative;
+    left: 0px;
+    float: left;
+}
+
+.content >.linkedit > .links  .link:hover   >.buttonrem{
+    opacity: 0.5;
+}
+
+.content >.linkedit > .links  .link >  .buttonrem:hover{
+    opacity: 1;
+}
+
+.content >.linkedit > .links  .link .buttonrem{
+    width: 40px;
+    height: 40px;
+    float:right;
+    background-image: url('../images/trash.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 50% 50%;
+    opacity: 0.2;
+    margin-top: -20px;
+    z-index: 100;
+    cursor:pointer;
+}
+
+.content >.linkedit >  .title{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;
+    height: 40px;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+}
+
+.content >.linkedit > .subtitle{
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;    
+}
+
+.content >.linkedit > form > .label{
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+}
+
+.content >.linkedit #loadinglink{
+    color: white;
+    width: 312px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgba(0,0,0,0.2);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#infos summary{
+    margin-bottom: 0px;
+    font-size: 18px;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    width: 480px;
+    background-image: url('../images/plus.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+#infos[open=''] summary{
+    background-image: url('../images/minus.png');
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#infos summary:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+#infos summary:active{
+    font-weight: bold;
+}
+
+#infos[open='']{
+    background: none;
+    box-shadow: none;
+    background: rgba(255,255,255,0.1);
+}
+
+#infos{
+    border-radius: 5px;
+    width: 480px;
+    margin-left: 10px;
+    overflow: hidden;
+    margin-left: 0px;
+}
+
+.warning{
+    transition: box-shadow 0.4s ease-out,max-height 0.4s ease-out,background 0.4s ease-out,padding-top 0.5s ease-out,padding-bottom 0.5s ease-out;
+    margin: 10px;
+    font-family: "Raleway";
+    font-weight: 500;
+    position: relative;
+    color: white;
+    float: left;
+}
+
+#voltar{
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}

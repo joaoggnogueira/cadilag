@@ -1,0 +1,44 @@
+<?PHP 
+code::init();
+code::initFunction("Busca(INFO)","Se o valor está na lista");
+
+code::l("anterior,i : inteiro;", "Declarando variáveis para leitura");
+code::l("anterior := -1;", "Variável de leitura 'anterior' aponta para o vazio");
+code::l("i := PRIM;", "Variável de leitura aponta para o primeiro indice");
+code::l();
+code::l("Se PRIM != -1 então", "Se a lista não estiver vázia");
+code::begin();
+    code::l("Se tamanho > 1 então", "Se a lista possuir mais de um elemento");
+    code::begin();
+        code::l("Enquanto i != -1 && INFO < lista[i].info então", "Percorrendo a lista, enquanto a variável auxiliar for falsa");
+        code::begin();
+            code::l("anterior := i;", "Anterior aponta para o elemento atual a ser percorrido");
+            code::l("i := lista[i].prox;", "Variável de leitura aponta para o próximo elemento da lista");
+        code::end();
+        code::l();
+        code::l("Se i != -1 && INFO == lista[i].info", "Se tiver o mesmo valor do pesquisado");
+        code::begin();
+            code::l("Se anterior == -1 então","Se for o primeiro elemento da lista");
+            code::begin();
+                code::l("DISP := i;","indice disponível aponta para variável de leitura");
+                code::l("PRIM := lista[i].prox;","primeiro indice agora é o próximo do elemento atual");
+            code::end();
+            code::l("Senão","Se não for o primeiro elemento da lista");
+            code::begin();
+                code::l("DISP := lista[anterior].prox;","indice disponível aponta para o próximo do elemento atual");
+                code::l("lista[anterior].prox := lista[i].prox;","elemento anterior aponta para ao próximo do elemento atual");
+            code::end();
+            code::l("lista[i].prox := DISP;","Próximo do elemento atual aponta para o próximo indice disponível");
+            code::l("tamanho := tamanho - 1;", "O tamanho da fila decrementa");
+        code::end();
+    code::end();
+    code::l("Senão se INFO == lista[i].info", "Se a lista possuir somente um elemento, e tiver o mesmo valor do pesquisado");
+    code::begin();
+        code::l("PRIM := -1;", false);
+        code::l("lista[i].prox := DISP;", false);
+        code::l("DISP := i;", false);
+        code::l("tamanho := tamanho - 1;", "O tamanho da fila decrementa");
+    code::end();
+code::end();
+
+code::write();

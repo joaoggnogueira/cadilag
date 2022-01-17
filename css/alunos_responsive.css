@@ -1,0 +1,110 @@
+/* 
+    Created on : 18/04/2018, 18:41:15
+    Author     : Acer
+*/
+
+.area{
+    left: 10px;
+}
+
+.topbar label{
+    float:left;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px !important;
+    color: black;
+}
+
+.topbar select{
+    margin: 0px;
+    height: 25px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.area > .infos{
+    left: 100px;
+    top: 80px;
+}
+
+body.more .area .aluno, body.more .area > #title{
+    display: none;
+}
+
+#voltar{
+    left: 10px;
+    top: 80px;
+    position: absolute;
+    width: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+body:not(.more) #voltar{
+    display: none;
+}
+
+#icon{
+    display: none;
+}
+
+.topbar .resposives_buttons button.action{
+    background: #385875;
+    border-bottom: 5px solid #7b9fc0;
+    color: white;
+    margin-left: 2px;
+    margin-right: 7px;
+}
+.topbar .resposives_buttons button{
+    width: 50px;
+    height: 50px;
+    color: #333;
+    background: white;
+    border: none;
+    top:0px;
+    border-radius: 0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #666;
+    font-size: 30px;
+}
+.topbar .resposives_buttons{
+    display: block;
+}
+
+/**TOPBAR**/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+    display: none;
+}

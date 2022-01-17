@@ -1,0 +1,277 @@
+
+/* 
+    Created on : 23/02/2016, 19:28:46
+    Author     : joaog
+*/
+
+#voltar{
+    margin-left: 10px;
+}
+
+.content{
+    left: 30px;
+    top: 80px;
+    position: absolute;
+}
+
+#empty{
+    color: white;
+    text-align: center;
+    margin: 0px;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    height: 40px;
+    line-height: 40px;
+}
+
+button{
+    margin-bottom: 10px;    
+    width: 230px;
+    position: relative;
+    height: 35px;
+    top: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.pure-button-primary{
+    box-shadow: 0px 2px 0px rgba(255,255,255, 0.3);
+}
+.pure-button-primary:hover{
+    box-shadow: 0px 1px 0px rgba(255,255,255, 0.3);   
+}
+button:active{
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.3);    
+}
+
+button:hover{
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);     
+    top: 11px;
+}
+
+.area {
+    position: relative;
+}
+
+.area > .lista{
+    margin-left: 10px;
+    padding: 10px;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    float: left; 
+}
+
+.area > .novo{
+    padding: 10px;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    float: left;
+}
+
+.area > .novo > .title,.area > .lista > .title{
+    font-family: "Raleway";
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 40px;
+    color: white;
+    border-bottom: 5px solid rgba(255,255,255,0.4);
+}
+
+.area > .novo > #formMaterial{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.area > .novo > #formMaterial > .label,.area > .novo > #formMaterial > .smalllabel{
+    color: white;
+    position: relative;
+}
+
+.area > .novo > #formMaterial > input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.area > .novo > #formMaterial > input[type=file]{
+    color:white;
+}
+
+.area > .novo > #formMaterial > textArea{
+    width: 100%;
+    resize: vertical;
+    height: 100px;
+}
+
+.warning{
+    font-family: "Raleway";
+    font-weight: 200;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 20px;
+}
+#titulo{
+    margin-bottom: 0px;
+}
+
+.columnnames{
+    border: 1px solid rgba(255,255,255,0.6);
+    border-left: none;
+    position: relative;
+    height: 20px;
+    color: white;
+    background: rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+.columnnames > *{
+    float: left;
+    border-left: 1px solid rgba(255,255,255,0.6);
+}
+
+.columnndata{
+    width: 100px;
+}
+
+.columnnhora{
+   width: 75px;
+}
+
+.columnntitulo{
+    width: 215px;
+}
+
+.materiaistable{
+    border: 1px solid rgba(255,255,255,0.6);
+    border-left: none;
+    border-top: none;
+    position: relative;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+.material{
+    height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.material:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.material > *{
+    float:left;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid rgba(255,255,255,0.6);
+    overflow: hidden;
+}
+
+.materiadetails{
+    top: 145px;
+    left: 900px;
+    width: 300px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    position: absolute;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.materiadetails > .title > a{
+    float: right;
+    cursor: pointer;
+}
+.materiadetails > .title{
+    color: white;
+    width: 100%;
+    border-top: 3px solid rgba(255,255,255,0.4);
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 200;
+}
+
+.materiadetails > .label{
+    margin-top: 10px;
+    line-height: 20px;
+    font-family: "Raleway";
+    font-weight: 200;
+    font-size: 16px;
+    color: white;
+}
+
+.materiadetails > .value{
+    line-height: 20px;
+    font-size: 17px;
+    color: white;  
+    word-wrap: break-word;
+}
+
+.materiaistable .material:hover{
+    background-color: rgba(255,255,255,0.1) !important;
+}
+
+.materiaistable .material:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+}
+.materiaistable .material:nth-child(odd){
+    background-color: rgba(0,0,0,0.3);
+}
+
+#titulo{
+    margin-bottom: 0px;
+}
+
+button.submit:hover{
+    background-image: url(../images/upload.svg) !important;
+}
+
+button.submit{
+    margin-right: 10px;
+    background-image: url(../images/upload.svg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+    width: 300px;
+}
+
+.materiadetails button.view{
+    float: left;
+    margin-right: 10px;
+    background-image: url(../images/view.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+    width: 290px;
+}
+.materiadetails button.download{
+    float: left;
+    margin-right: 10px;
+    background-image: url(../images/download.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 60px;
+    width: 140px;
+}
+
+.materiadetails  button.delete{
+    float: left;
+    background-image: url(../images/deleteBlack.png);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+    padding-left: 50px;
+    width: 140px;
+}

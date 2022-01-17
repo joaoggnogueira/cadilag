@@ -1,0 +1,55 @@
+/* 
+    Created on : 13/04/2018, 14:52:22
+    Author     : Acer
+*/
+
+.content{
+    left: 0px;
+    width: 100%;
+}
+
+.toparea .showbtn {
+    width: calc(100% - 40px);
+}
+
+.content > .respostasarea > .repostas > .grupo > .toparea > .info > .userlabel {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+}
+
+.content > .respostasarea > .repostas > .grupo > .resposta > .text {
+    width: calc(100% - 140px);
+    margin-left: 120px;
+    min-height: 100px;
+}
+
+/*Topbar*/
+
+.topbar{
+    position: absolute;
+    width: 100%;
+}
+
+.topbar .title{
+    display: none;
+}
+
+.topbar .subtitle{
+    display: none;
+}
+
+.topbar #gotohub p{
+    font-size: 0px;
+}
+
+.topbar #gotohub{
+    padding: 0px;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#voltarprincipal{
+    display: none;
+}

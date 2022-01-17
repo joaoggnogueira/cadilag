@@ -1,0 +1,30 @@
+/* 
+    Created on : 25/11/2017, 19:52:28
+    Author     : joaog
+*/
+.formmain{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+.dinamicSmallDotSucessor{
+    cursor: grab;
+    cursor:pointer;
+    width:42px; 
+    height:42px; 
+    border: 5px solid #333;
+    background: rgba(0,0,0,0);
+    border-radius: 40px;
+    z-index:5; 
+    margin-left: -6px;
+    margin-top: -6px;
+    position:absolute; 
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hideNullPointers .dinamicSmallDot .finalright,.hideNullPointers .dinamicSmallDot .finalleft{
+    display: none;
+}

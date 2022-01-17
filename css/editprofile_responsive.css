@@ -1,0 +1,133 @@
+/* 
+    Created on : 09/04/2018, 22:11:29
+    Author     : Acer
+*/
+.responsive-menu-password .socialBinds,.responsive-menu-editimage .socialBinds,.responsive-menu-principal .socialBinds{
+    display: none !important;
+}
+
+.responsive-menu-password .editimage,.responsive-menu-principal .editimage,.responsive-menu-social .editimage{
+    display: none !important;
+}
+
+.responsive-menu-principal .editpassword{
+    display: none !important;
+}
+    
+.responsive-menu-password .area,.responsive-menu-social .area,.responsive-menu-editimage .area,
+.responsive-menu-password .buttons,.responsive-menu-social .buttons,.responsive-menu-editimage .buttons{
+    display: none;
+}
+
+.responsive-menu-social .socialBinds{
+    display: block;
+}
+
+.responsive-menu-password .editpassword{
+    display: block;
+    left: 10px;
+    width: calc(100% - 40px);
+}
+
+.responsive-menu-editimage .editimage{
+    left: 10px;
+    width: calc(100% - 20px);
+}
+
+.responsive-menu-editimage .editimage .frame input{
+    width: calc(100% - 20px);
+}
+
+.area{
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 570px;
+}
+
+.buttons{
+    top: 650px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 140px;
+}
+
+#closeSocial{
+    width: calc(100% - 20px);
+    display: block;
+    margin-top: 10px;
+}
+
+.buttons button{
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.socialBinds{
+    left: 10px;
+    width: calc(100% - 40px);
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.socialBinds .wrapper.wrapper-left{
+    position: relative;
+    border: none;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+    width: 100%;
+}
+.socialBinds .wrapper.wrapper-right{
+    position: relative;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+    width: 100%;
+    left: 0px;
+    padding-bottom: 20px;
+}
+
+.topbar{
+    width: 100%;
+    position: absolute;
+}
+
+#inputs{
+    float: none;
+    top: 300px;
+    position: absolute;
+}
+
+#inputs input{
+    width: 100%;
+}
+
+#inputs{
+    width: calc(100% - 20px);
+}
+
+#imageuser{
+    left: 10px;
+}
+
+.editpassword{
+    position: absolute;
+    display: none;
+}
+
+button#editimage{
+    top: 0px;
+    left: 0px;
+    margin-top: 0px;
+}
+
+/*Topbar*/
+
+.editimage{
+    display: none;
+    height: auto;
+}
+
+.editimage #controls button{
+    padding: 3px;
+}
+
+#editsocial{
+    display: block;
+}
